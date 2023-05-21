@@ -68,11 +68,16 @@ const welcomeMsg = `Гость ${firstName} ${lastName} поселяется в 
 console.log(welcomeMsg);
 // ++++++++++++++++++++++++++++++++++++++++++++
 
-function add(a, b, c) {
-  console.log("Addition result equals ${a + b + c}");
-  // Change code above this line
-}
+//Що буде виведено в консоль?:
+console.log(0 || ('0' && {}));
+// Вірна відповідь: {} 
 
-add(15, 27, 10);
-add(10, 20, 30);
-add(5, 10, 15);
+// ++++++++++++++++++++++++++++++++++++++++++++
+//Що буде виведено в консоль?:
+let a = 6; 
+let b = false; 
+let c = "12"; 
+let d = 1; 
+let result = a + d + c + b; 
+console.log(result);
+
