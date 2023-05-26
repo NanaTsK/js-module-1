@@ -440,23 +440,60 @@ console.log(sum)
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+function checkStorage(available, ordered) {
+
+  if (ordered === 0) { 
+    return "Your order is empty!"
+  }
+  if (ordered > available) { 
+    "Your order is too large, not enough goods in stock!"
+  }
+  return "The order is accepted, our manager will contact you";
+
+
+}
+
+
+
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));
+console.log(checkStorage(70, 0));
+
+console.log(checkStorage(200, 20));
+console.log(checkStorage(200, 250));
+console.log(checkStorage(150, 0));
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+// Як швидко очистити масив
+
+// const fruits = ['banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple'];
+// fruits.length = 0;
+// console.log(fruits);
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+// Як об'єднати більше двох масивів
+
+// const fruits = ['apple', 'banana', 'orange'];
+// const meat = ['poultry', 'beef', 'fish'];
+// const vegetables = ['potato', 'tomato', 'cucumber'];
+// const food = [...fruits, ...meat, ...vegetables];
+// console.log(food);
+
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 
-//* ++++++++++++++++++++++++++++++++++++++++++++
-
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-
-//* ++++++++++++++++++++++++++++++++++++++++++++
