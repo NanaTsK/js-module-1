@@ -145,9 +145,9 @@ while (clientCounter < maxClients) {
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-for (let i = 2; i <= 20; i += 5) {
-  console.log(i);
-}
+// for (let i = 2; i <= 20; i += 5) {
+//   console.log(i);
+// }
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 // const target = 3;
@@ -166,15 +166,15 @@ for (let i = 2; i <= 20; i += 5) {
 // }
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-const number = 10;
+// const number = 10;
 
-for (let i = 0; i < number; i += 1) {
-  if (i % 2 === 0) {
-    continue;
-  }
+// for (let i = 0; i < number; i += 1) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
 
-  console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
-}
+//   console.log("Непарне i: ", i); // 1, 3, 5, 7, 9
+// }
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 // Общая сумма зарплат работников:
@@ -185,14 +185,14 @@ const employees = 9;
 let totalSalary = 0;
 
 // 2. перебрать работнков в цикле:
-for (let i = 1; i <= employees; i += 1) { 
-    const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary,);
-    console.log(`ЗП работника номер ${i} - ${salary}`);
-    totalSalary += salary;
-        // console.log(`totalSalary: `, totalSalary);
+// for (let i = 1; i <= employees; i += 1) { 
+//     const salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary,);
+//     console.log(`ЗП работника номер ${i} - ${salary}`);
+//     totalSalary += salary;
+//         // console.log(`totalSalary: `, totalSalary);
 
-}
-    console.log(`totalSalary: `, totalSalary);
+// }
+//     console.log(`totalSalary: `, totalSalary);
 
 // 3. сгенерить случайную зп
 
@@ -206,15 +206,15 @@ const max = 13;
 let total = 0;
 
 // 2. for from min to max, с шагом в 1
-for (let i = min; i <= max; i += 1) {
-    if (i % 2 !== 0) {
-        // console.log(`Не четное: `, i);
-        continue;
-    }
-    console.log(`четное: `, i);
-    total += i;
-}
-console.log(`total: `, total);
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 !== 0) {
+//         // console.log(`Не четное: `, i);
+//         continue;
+//     }
+//     console.log(`четное: `, i);
+//     total += i;
+// }
+// console.log(`total: `, total);
 // 3. проверяем остатки от деления
 
 // 4. пишем в сумму / лог
@@ -353,9 +353,9 @@ console.log(words.join("-")); // "JavaScript-це-цікаво"
 // console.log(clients.indexOf("Monkong")); // -1
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // Метод includes()
-const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-console.log(clients.includes("Poly")); // true
-console.log(clients.includes("Monkong")); // false
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.includes("Poly")); // true
+// console.log(clients.includes("Monkong")); // false
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // Перевірка багатьох умов з includes()
@@ -412,22 +412,22 @@ if (hasFruit) {
 
 
 // 2.Метод pop()
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.pop()); //  5
-console.log(numbers); // [1, 2, 3, 4]
+// console.log(numbers.pop()); //  5
+// console.log(numbers); // [1, 2, 3, 4]
 
-console.log(numbers.pop()); //  4
-console.log(numbers); // [1, 2, 3]
+// console.log(numbers.pop()); //  4
+// console.log(numbers); // [1, 2, 3]
 
-console.log(numbers.pop()); //  3
-console.log(numbers); // [1, 2]
+// console.log(numbers.pop()); //  3
+// console.log(numbers); // [1, 2]
 
-console.log(numbers.pop()); //  2
-console.log(numbers); // [1]
+// console.log(numbers.pop()); //  2
+// console.log(numbers); // [1]
 
-console.log(numbers.pop()); //  1
-console.log(numbers); // []
+// console.log(numbers.pop()); //  1
+// console.log(numbers); // []
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 const nums = [11, 30, 22, 9, 80]
@@ -449,11 +449,7 @@ function checkStorage(available, ordered) {
     "Your order is too large, not enough goods in stock!"
   }
   return "The order is accepted, our manager will contact you";
-
-
 }
-
-
 
 console.log(checkStorage(100, 50));
 console.log(checkStorage(100, 130));
@@ -483,17 +479,118 @@ console.log(checkStorage(150, 0));
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+// найти самую большую цифру:
+
+const numbers = [51, 76, 89, 93, 29, 50, 7, 9, 62];
+
+let smallestNumber = numbers[0];
+
+for (const number of numbers) { 
+  if (number < smallestNumber) { 
+    smallestNumber = number;
+  }
+}
+console.log(smallestNumber)
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+
+// function filterArray(numbers, value) {
+//    // Change code below this line
+
+// const newArray = [];
+
+//    for (let i = 0; i < numbers.length; i += 1) {
+//      if (numbers[i] > value) { 
+//        newArray.push(numbers[i]);
+//      }
+
+
+//    }
+
+//   return newArray
+
+
+  // Change code above this line
+// }
+
+// ____________
+// function filterArray(numbers, value) {
+//   // Change code below this line
+// const newArray = [];
+//  for (let i = 0; i < numbers.length; i += 1){
+//      if (numbers[i] > value) {
+//        newArray.push(numbers[i]);
+//      }
+//    }
+// return newArray;
+//  // Change code above this line
+// }
+// ____________
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3) );
+// повертає [4, 5]
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+// Записать масив в рядок, разделить запятой - через For of, или Join
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// let string1 = "";
+
+// for (const client of clients) {
+//   string1 += client + ", "
+  
+// }
+// string1 = string1.slice(0, string1.length - 2)
+// console.log(string1);
+
+const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+
+const string1 = clients.join(", ")
+console.log(string1);
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+//  How to find the common elements between two or more arrays
+
+  function getCommonElements(array1, array2) {
+  // Create an empty array to store the common elements
+  let commonElements = [];
+
+  // Iterate through each element of the first array
+  for (let i = 0; i < array1.length; i++) {
+    let currentElement = array1[i];
+
+    // Check if the current element exists in the second array
+    if (array2.includes(currentElement)) {
+      // Add the common element to the commonElements array
+      commonElements.push(currentElement);
+    }
+  }
+
+  // Return the array containing the common elements
+  return commonElements;
+}
+console.log( getCommonElements([1, 2, 3], [2, 4]) );
+// повертає [2]
+console.log( getCommonElements([1, 2, 3], [2, 1, 17, 19]) );
+// повертає [1, 2]
+console.log( getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// повертає [12, 27, 3]
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-//* ++++++++++++++++++++++++++++++++++++++++++++
-
-//* ++++++++++++++++++++++++++++++++++++++++++++
-
-//* ++++++++++++++++++++++++++++++++++++++++++++
-
-//* ++++++++++++++++++++++++++++++++++++++++++++
 

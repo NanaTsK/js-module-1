@@ -1,24 +1,26 @@
 //* ЗАВДАННЯ 1
 
-const productName = 'Droid';
-console.log(productName);
-// 'Droid'
+// const productName = 'Droid';
+// console.log(productName);
+// // 'Droid'
 
-const pricePerItem = 2000;
-console.log(pricePerItem);
-// 2000
+// const pricePerItem = 2000;
+// console.log(pricePerItem);
+// // 2000
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 2
 
-let productName = "Droid";
-let pricePerItem = 2000;
+// let productName = "Droid";
+// let pricePerItem = 2000;
 
-productName = "Repair droid";
-  console.log(productName)
-pricePerItem = 2000 + 1500;
-  console.log(pricePerItem);
+// productName = "Repair droid";
+//   console.log(productName)
+// pricePerItem = 2000 + 1500;
+//   console.log(pricePerItem);
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 3
 
@@ -28,22 +30,25 @@ const login = "mango935";
 const isOnline = true;
 const isAdmin = false;
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 4
 
-const pricePerItem = 3500;
-const orderedQuantity = 4;
+// const pricePerItem = 3500;
+// const orderedQuantity = 4;
 
-const totalPrice = pricePerItem * orderedQuantity;
+// const totalPrice = pricePerItem * orderedQuantity;
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 5
 
-const productName = "Droid";
-const pricePerItem = 3500;
-const message = `You picked ${productName}, price per item is ${pricePerItem} credits`
-console.log(message)
+// const productName = "Droid";
+// const pricePerItem = 3500;
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`
+// console.log(message)
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 6
 
@@ -53,11 +58,14 @@ const deliveryFee = 50;
 const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
 const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 7
 
 function sayHi() {console.log("Hello, this is my first function!")};
 sayHi();
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 8
 
@@ -67,6 +75,8 @@ function add(a, b, c) {
 add(15, 27, 10);
 add(10, 20, 30);
 add(5, 10, 15);
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 9
 
@@ -79,6 +89,8 @@ console.log(add(10, 20, 30));
 console.log(add(5, 10, 15));
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 10
 
 function makeMessage (name, price) {
@@ -86,6 +98,8 @@ function makeMessage (name, price) {
   return message;
 };
 
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 11
 
@@ -96,6 +110,8 @@ function calculateTotalPrice (orderedQuantity, pricePerItem) {
 calculateTotalPrice(5, 100);
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 12
 
 function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
@@ -104,6 +120,8 @@ const message = `You ordered droids worth ${orderedQuantity * pricePerDroid + de
 }
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 13
 
 function isAdult(age) {
@@ -111,6 +129,7 @@ function isAdult(age) {
   return passed;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 14
 
@@ -120,6 +139,7 @@ function isValidPassword(password) {
   return isMatch;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 15
 
@@ -133,6 +153,7 @@ function checkAge(age) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 16
 
@@ -146,6 +167,7 @@ function checkStorage(available, ordered) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 17
 
@@ -158,6 +180,7 @@ b -= 4;
 c *= 3;
 d /= 10;
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 18
 
@@ -174,6 +197,7 @@ const totalPrice = pricePerDroid * orderedQuantity
 }
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 19
 
@@ -192,6 +216,7 @@ function checkPassword(password) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 20
 
@@ -204,6 +229,7 @@ function checkStorage(available, ordered) {
     return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 21
 
@@ -212,6 +238,7 @@ function isNumberInRange(start, end, number) {
   return isInRange;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 22
 
@@ -222,6 +249,7 @@ function checkIfCanAccessContent(subType) {
 }
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 23
 
@@ -230,6 +258,8 @@ function isNumberNotInRange(start, end, number) {
   const isNotInRange = !isInRange; 
   return isNotInRange;
 }
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 24
 
@@ -248,6 +278,8 @@ function getDiscount(totalSpent) {
   return discount;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 25
 
 function checkStorage(available, ordered) {
@@ -257,6 +289,7 @@ function checkStorage(available, ordered) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 26
 
@@ -275,6 +308,7 @@ function checkStorage(available, ordered) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 27
 
@@ -299,6 +333,7 @@ function getSubscriptionPrice(type) {
 }
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 28
 
@@ -314,6 +349,7 @@ switch (password) {
 
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 29
 
@@ -329,6 +365,7 @@ switch (country) {
   return message;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 30
 
@@ -339,6 +376,8 @@ function getNameLength(name) {
 }
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 31
 
 const courseTopic = "JavaScript essentials";
@@ -347,6 +386,7 @@ const firstElement = courseTopic[0];
 const lastElement = courseTopic[courseTopic.length - 1];
 
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 32
 
@@ -357,6 +397,7 @@ console.log(substring);
   return substring;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 33
 
@@ -366,6 +407,8 @@ result = message.length <= maxLength ? message : message.slice (0, maxLength)+`.
   return result;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 34
 
 function normalizeInput(input) {
@@ -374,6 +417,8 @@ function normalizeInput(input) {
   return normalizedInput;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
 //* ЗАВДАННЯ 35
 
 function checkForName(fullName, name) {
@@ -381,6 +426,7 @@ function checkForName(fullName, name) {
   return result;
 }
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
 
 //* ЗАВДАННЯ 36
 
@@ -389,4 +435,7 @@ function checkForSpam(message) {
 result = message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale")
   return result;
 }
+
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
 
