@@ -252,11 +252,11 @@ if (balance >= payment) {
 // }
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-const string = "javascript";
+// const string = "javascript";
 
-for (const character of string) {
-  console.log(character);
-}
+// for (const character of string) {
+//   console.log(character);
+// }
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
@@ -546,10 +546,10 @@ console.log(smallestNumber)
 // string1 = string1.slice(0, string1.length - 2)
 // console.log(string1);
 
-const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 
-const string1 = clients.join(", ")
-console.log(string1);
+// const string1 = clients.join(", ")
+// console.log(string1);
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
@@ -580,9 +580,6 @@ console.log( getCommonElements([1, 2, 3], [2, 1, 17, 19]) );
 // повертає [1, 2]
 console.log( getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 // повертає [12, 27, 3]
-//* ++++++++++++++++++++++++++++++++++++++++++++
-
-
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
 
