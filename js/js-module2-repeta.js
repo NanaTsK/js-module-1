@@ -100,18 +100,62 @@ console.log(slug2);
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+// СУММА ДВУХ или более МАССИВОВ :
+
 const array1 = [5, 10, 15, 20];
 const array2 = [10, 20, 30];
+const array3 = [3, 6, 9]
 let total = 0
 
-const numbers = array1.concat(array2);
+const numbers = array1.concat(array2, array3, [1, 2, 3]);
 console.log(numbers);
 
 for (const number of numbers) {
     total += number; 
 }
-console.log(numbers)
+console.log(total)
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
+
+// КОЛЛЕКЦИЯ КАРТОЧЕК (напр. trello) :
+//* Метод Splice - деструктивный
+// Удалить 
+// Добавить
+// Обновить
+
+const cards = ["Card-1", "Card-2", "Card-3", "Card-4", "Card-5"];
+console.table(cards);
+
+/*
+ * удаление по индексу, метод indexOf()
+ */
+// const cardToRemove = "Card-3";
+// const index = cards.indexOf(cardToRemove);
+
+// console.log(index);
+
+// cards.splice(index, 1);
+// console.log(cards);
+
+
+/*
+ * добавление по индексу
+ */
+// const cardToInsert = "Card-6";
+// const index = 3
+// cards.splice(3, 0, cardToInsert);
+// console.log(cards);
+
+/*
+ * обновление по индексу
+ */
+const cardToUpdate = "Card-4";
+const index = cards.indexOf(cardToUpdate);
+console.log(index);
+
+cards.splice(3, 1, "обновленная карточка-4");
+console.table(cards);
+
+
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
