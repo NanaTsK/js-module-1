@@ -361,80 +361,569 @@ console.log(values);
 // * ЗАВДАННЯ 17 - масив однотипних об'єктів
 
 //*приклад завдання
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    rating: 8.51,
-  },
-  {
-    title: "The Dream of a Ridiculous Man",
-    author: "Fyodor Dostoevsky",
-    rating: 7.75,
-  },
-];
-for (const book of books) {
-  // Об'єкт книги
-  console.log(book);
-  // Назва
-  console.log(book.title);
-  // Автор
-  console.log(book.author);
-  // Рейтинг
-  console.log(book.rating);
-}
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+// ];
+// for (const book of books) {
+//   // Об'єкт книги
+//   console.log(book);
+//   // Назва
+//   console.log(book.title);
+//   // Автор
+//   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
 
 //* завдання
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
-];
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
 
-const hexColors = [];
-const rgbColors = [];
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const color of colors) { 
+
+// hexColors.push(color.hex)
+// console.log(color.hex);
+
+// rgbColors.push(color.rgb)
+// console.log(color.rgb);
+// }
+
+// console.log(hexColors);
+// // ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
+
+// console.log(rgbColors);
+// // ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 18 - Пошук об'єкта за значенням властивості
+//Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products 
+//і повертає його ціну(властивість price)
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//     for (let product of products) { 
+//         if (productName === product.name) { 
+//             return product.price
+
+//         }
+//     }
+//             return null
+// }
+
+// console.log( getProductPrice("Radar") );
+// // повертає 1300.
+// console.log( getProductPrice("Grip") );
+// // повертає 1200.
+// console.log( getProductPrice("Scanner") );
+// // повертає 2700.
+// console.log( getProductPrice("Droid") );
+// // повертає 400.
+// console.log( getProductPrice("Engine") );
+// // повертає null.
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 19 - колекція значень властивості
+//Функція повинна повернути масив всіх значень властивості
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//     // Change code below this line
+//     let propValues = [];
+//     for (let product of products) {
+//         if (product.hasOwnProperty(propName)) { 
+//             propValues.push(product[propName]);
+//         }   
+//     }
+//      return propValues;
+// }
+
+//* ИЛИ
+// function getAllPropValues(propName) {
+//     const allValues = [];
+//     for (product of products) {
+//         if (Object.keys(product).includes(propName)) {
+//             allValues.push(product[propName])
+//         }
+//     }
+//     return allValues
+// }
+
+
+// console.log( getAllPropValues("name") );
+// // повертає ["Radar", "Scanner", "Droid", "Grip"]
+// console.log( getAllPropValues("quantity") );
+// // повертає [4, 3, 7, 9]
+// console.log( getAllPropValues("price") );
+// // повертає [1300, 2700, 400, 1200]
+// console.log( getAllPropValues("category") );
+// // повертає []
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 20 - загальна вартість товару
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//     for (let product of products) { 
+//         console.log(product);
+//         if (product.hasOwnProperty("name") && product.name === productName) { 
+//             console.log(product.price);
+//             return product.price * product.quantity;
+//         }
+//     }
+//     return 0
+// }
+
+//* ИЛИ
+// function calculateTotalPrice(productName) {
+//     let totalPrice = 0;
+//     for (const product of products) {
+//         if (product.name === productName) {
+//             totalPrice = product.price * product.quantity;
+//         }
+//     }
+//     return totalPrice;
+// }
+
+// console.log( calculateTotalPrice("Blaster") );
+// // повертає 0
+// console.log( calculateTotalPrice("Radar") );
+// // повертає 5200
+// console.log( calculateTotalPrice("Droid") );
+// // повертає 2800
+// console.log( calculateTotalPrice("Grip") );
+// // повертає 10800
+// console.log( calculateTotalPrice("Scanner"));
+// // повертає 8100
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 21 -Деструктуризація
+
+//*приклад завдання
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   public: true,
+//   rating: 8.38,
+// };
+// // Деструктуризуємо
+// const { title, author, public, rating, coverImage } = book;
+// console.log(coverImage); // undefined
+
+// const accessType = public ? "публічному" : "закритому";
+// const message = `Книга ${title} автора ${author} з рейтингом ${rating} знаходиться в ${accessType} доступі.`;
+// console.log(message);
+
+//* завдання
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+
+// //* was:
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+
+// //* became:
+// const { yesterday, today, tomorrow } = highTemperatures;
+
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// console.log(yesterday );
+// // це число 28
+// console.log( today );
+// // це число 26
+// console.log(tomorrow );
+// // це число 33
+// console.log(meanTemperature );
+// // це число 29
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 22
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// //* was:
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+// // const icon = highTemperatures.icon;
+
+// //* became:
+// const { yesterday, today, tomorrow,
+// icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+// console.log(yesterday );
+// // це число 28
+// console.log( today );
+// // це число 26
+// console.log(tomorrow );
+// // це число 33
+// console.log(icon );
+// // це рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 23 - змінa ім'я змінної Під час деструктуризації  
+
+//*приклад завдання
+// const firstBook = {
+//   title: "Останнє королівство",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+
+// console.log(firstTitle); // Останнє королівство
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+// console.log(firstBook);
+
+
+// const secondBook = {
+//   title: "Сон смішної людини",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смішної людини
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+
+//* завдання
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// //* was
+// // const highYesterday = highTemperatures.yesterday;
+// // const highToday = highTemperatures.today;
+// // const highTomorrow = highTemperatures.tomorrow;
+// // const highIcon = highTemperatures.icon;
+
+// //* became
+// const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow,
+// icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+// // Change code above this line
+
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// console.log( highYesterday );
+// // це число 28
+// console.log( highToday );
+// // це число 26
+// console.log( highTomorrow );
+// // це число 33
+// console.log( highIcon );
+// // це рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 24 - деструктуризація об'єкта.
+
+//*приклад завдання
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+// ];
+
+//     //* ИЛИ
+// for (const book of books) {
+//   console.log(book.title);
+//   console.log(book.author);
+//   console.log(book.rating);
+// }
+
+//     //* ИЛИ
+// for (const book of books) {
+//     const { title, author, rating } = book;
+//     //* ИЛИ
+// for (const { title, author, rating } of books) {
+
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+//* завдання
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const {hex, rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+
+// console.log(hexColors );
+// // це масив ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
+// console.log(rgbColors );
+// // це масив ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 25 - деструктуризації властивостей вкладених об'єктів
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+
+// const { today: { high: highToday, low: lowToday,
+//     icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+//     tomorrow: { high: highTomorrow, low: lowTomorrow,
+//         icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}
+// } = forecast;
+
+
+// //* was:
+// // const highToday = forecast.today.high;
+// // const lowToday = forecast.today.low;
+// // const todayIcon = forecast.today.icon;
+
+// // const highTomorrow = forecast.tomorrow.high;
+// // const lowTomorrow = forecast.tomorrow.low;
+// // const tomorrowIcon = forecast.tomorrow.icon;
+
+
+// console.log(highToday );
+// //це число 32
+// console.log(lowToday );
+// //це число 28
+// console.log(todayIcon );
+// //це рядок "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg"
+// console.log(highTomorrow );
+// //це число 31
+// console.log(lowTomorrow );
+// //це число 27
+// console.log(tomorrowIcon );
+// //це рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 26 - деструктуризація властивостей об'єкта
+
+
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+
+//     const { today: { low: todayLow, high: todayHigh },
+//         tomorrow: { low: tomorrowLow, high: tomorrowHigh } } = forecast;
+    
+// //* was
+// //   const todayLow = forecast.today.low;
+// //   const todayHigh = forecast.today.high;
+// //   const tomorrowLow = forecast.tomorrow.low;
+// //   const tomorrowHigh = forecast.tomorrow.high;
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(calculateMeanTemperature({today: { low: 28, high: 32 },
+//     tomorrow: { low: 25, high: 29 }}));
+// //повертає 28.5
+// console.log(calculateMeanTemperature({today: { low: 37, high: 40 },
+//     tomorrow: { low: 33, high: 38 }}));
+// //повертає 37
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 27 - ... (spread) повертає розпакований масив
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log( scores );
+// //це масив [89, 64, 42, 17, 93, 51, 26]
+// console.log( bestScore );
+// //це число 93
+// console.log( worstScore );
+// //це число 17
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 28 - з'єднання масивів, ...spread, 
+//*вищий / нижчий результат з масиву Math.max() Math.min()
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores) ;
+// const worstScore = Math.min(...allScores) ;;
+
+// console.log( firstGroupScores );
+// //це масив [64, 42, 93]
+// console.log( secondGroupScores );
+// //це масив [89, 14, 51, 26]
+// console.log( thirdGroupScores );
+// //це масив [29, 47, 18, 97, 81]
+// console.log( allScores );
+// //це масив [64, 42, 93, 89, 14, 51, 26, 29, 47, 18, 97, 81]
+// console.log( bestScore );
+// //це число 97
+// console.log(worstScore );
+// //це число 14
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 29 - з'єднання масивів, ...spread
+
+const defaultSettings = {
+  theme: "light",
+  public: true,
+  withPassword: false,
+  minNumberOfQuestions: 10,
+  timePerQuestion: 60,
+};
+const overrideSettings = {
+  public: false,
+  withPassword: true,
+  timePerQuestion: 30,
+};
 // Change code below this line
+const finalSettings = {...defaultSettings, ...overrideSettings};
 
-for (const color of colors) { 
+console.log( finalSettings.theme );
+//дорівнює "light"
+console.log( finalSettings.public );
+//дорівнює "false"
+console.log( finalSettings.withPassword );
+//дорівнює "true"
+console.log( finalSettings.minNumberOfQuestions);
+//дорівнює 10
+console.log( finalSettings.timePerQuestion);
+//дорівнює 30
 
 
-console.log(color.hex);
-// ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 30 >>>>>TO BE COMPLETED
 
-console.log(color.rgb);
-// ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+
+  // Change code above this line
 }
 
-console.log(hexColors);
-// ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
-
-console.log(rgbColors);
 
 
+console.log( makeTask({}) );
+//повертає { category: "General", priority: "Normal", completed: false }
 
-// for (const key in apartment) {
-//   keys.push(key);
-// }
-// for (const value in apartment) {
-//   values.push(apartment[value]);
-// }
-//* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ x
+console.log( makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+//повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
 
+console.log(makeTask({ category: "Finance", text: "Take interest" }) );
+//повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
 
-//* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ x
+console.log(makeTask({ priority: "Low", text: "Choose shampoo" }) );
+//повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
 
+console.log(makeTask({ text: "Buy bread" }));
+//повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ x
 
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ x
 
-
-
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ x
