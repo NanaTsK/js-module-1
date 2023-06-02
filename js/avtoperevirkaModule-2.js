@@ -275,6 +275,9 @@ function getEvenNumbers(start, end) {
 console.log(evenNumbers);
 }
 
+
+
+
 console.log( getEvenNumbers(2, 5) );
 // повертає [2, 4]
 console.log( getEvenNumbers(6, 12) );

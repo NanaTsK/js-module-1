@@ -2,7 +2,7 @@
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-//  How to find the common elements between two or more arrays
+//*  How to find the common elements between two or more arrays
 
   function getCommonElements(array1, array2) {
   // Create an empty array to store the common elements
@@ -31,7 +31,7 @@ console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-// ЗАМЕНЯЕТ РЕГИСТР КАЖДОГО СИМВОЛА В СТРОКЕ НА ПРОТИВОПОЛОЖН.
+//* ЗАМЕНЯЕТ РЕГИСТР КАЖДОГО СИМВОЛА В СТРОКЕ НА ПРОТИВОПОЛОЖН.
 
 
 const string = "HatunaLuna";
@@ -79,7 +79,7 @@ for (const client of clients) {
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
-// CONVERT STRING TO SLUG
+//* CONVERT STRING TO SLUG
 
 const title = "The Top 10 Most Popular TV Shows on Netflix";
 
