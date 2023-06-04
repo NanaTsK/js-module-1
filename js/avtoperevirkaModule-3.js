@@ -891,39 +891,276 @@ console.log( finalSettings.timePerQuestion);
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ 30 >>>>>TO BE COMPLETED
+// * ЗАВДАННЯ 30 - повертає новий об'єкт завдання
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
 
-  // Change code above this line
+//     return { completed, category, priority, ...data };
+    
+//   // Change code above this line
+// }
+
+// console.log( makeTask({}) );
+// //повертає { category: "General", priority: "Normal", completed: false }
+
+// console.log( makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// //повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+
+// console.log(makeTask({ category: "Finance", text: "Take interest" }) );
+// //повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }) );
+// //повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+
+// console.log(makeTask({ text: "Buy bread" }));
+// //повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 31 - сума будь-якої кількості аргументів
+
+//*приклад завдання
+
+function multiply(...args) {
+  console.log(args); // масив усіх аргументів
 }
 
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);
 
+//* завдання
 
-console.log( makeTask({}) );
-//повертає { category: "General", priority: "Normal", completed: false }
+// Change code below this line
+// function add(...args) {
+//     let sum = 0;
+// for (let i = 0; i < args.length; i += 1) {
+//   sum += args[i];
+//     }
+// return sum    // Change code above this line
+// }
 
-console.log( makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
-//повертає { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+//*ИЛИ
+// function add(...args) {
+//     let sum = 0;
+// for (let arg of args) {
+//   sum += arg;
+//     }
+// return sum    // Change code above this line
+// }
 
-console.log(makeTask({ category: "Finance", text: "Take interest" }) );
-//повертає { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
-
-console.log(makeTask({ priority: "Low", text: "Choose shampoo" }) );
-//повертає { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
-
-console.log(makeTask({ text: "Buy bread" }));
-//повертає { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+// console.log( add(15, 27) );
+// //повертає 42
+// console.log( add(12, 4, 11, 48) );
+// //повертає 75
+// console.log( add(32, 6, 13, 19, 8) );
+// //повертає 78
+// console.log( add(74, 11, 62, 46, 12, 36) );
+// //повертає 241
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ x
+// * ЗАВДАННЯ 32 
+
+//*приклад завдання
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значення першого аргументу
+//   console.log(secondNumber); // Значення другого аргументу
+//   console.log(otherArgs); // Масив інших аргументів
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+//* завдання - сума всіх аргументів без першого
+
+// // Change code below this line
+// function addOverNum(...args) {
+//   const firstArg = args[0];
+//   let total = 0;
+
+//     for (const arg of args) {
+//         if (arg > firstArg) { 
+//     total += arg;
+//         }
+//   }
+//   return total;
+//   // Change code above this line
+// }
+
+// console.log( addOverNum(50, 15, 27) );
+// //повертає 0
+// console.log( addOverNum(10, 12, 4, 11, 48, 10, 8));
+// //повертає 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// //повертає 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// //повертає 218
+
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ x
+// * ЗАВДАННЯ 33 - Масив збігів
+
+// Change code below this line
+function findMatches(array1, ...numbers) {
+  const matches = []; //* Don't change this line
+
+    for (let i = 0; i < array1.length; i += 1) { 
+        let currentElement = array1[i];
+
+        if (numbers.includes(currentElement)) { 
+            matches.push(currentElement);
+        }
+    }
+  // Change code above this line
+  return matches;
+}
+
+console.log( findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+//повертає [1, 2]
+console.log( findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+//повертає [17, 89, 2]
+console.log( findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+//повертає [24, 9, 41]
+console.log( findMatches([63, 11, 8, 29], 4, 7, 16));
+//повертає []
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ x
+// * ЗАВДАННЯ 34
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) { 
+//       return `Deleting book ${bookName}`
+//     },
+//     updateBook(oldName, newName) { 
+//        return `Updating book ${oldName} to ${newName}`
+//     },
+//   // Change code above this line
+// };
+
+// console.log(bookShelf.addBook("Haze") );
+// //повертає рядок "Adding book Haze"
+
+// console.log(bookShelf.removeBook("Red sunset"));
+// //повертає рядок "Deleting book Red sunset"
+
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+// //повертає рядок "Updating book Sands of dune to Dune"
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 35
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//  const bookIndex = this.books.indexOf(oldName);
+//    this.books.splice(bookIndex, 1, newName);
+//     return this.books;
+//     // Change code above this line
+//   },
+// };
+
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// //значення властивості books - це масив["The last kingdom", "Dungeon chronicles", "The guardian of dreams"]
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+// // значення властивості books - це масив["Dune", "Haze", "The guardian of dreams"]
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 36 - 
+//Додай об'єкту atTheOldToad властивість potions, значенням якої зроби порожній масив.
+
+// const atTheOldToad = {
+//   // Change code below this line
+
+//     potions: [],
+
+//   // Change code above this line
+// };
+
+// // addBook(bookName) {
+// //       return `Adding book ${bookName}`;
+// //     },
+
+// console.log(atTheOldToad.potions );
+// //це масив []
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 37 - Отримуємо все зілля
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//  getPotions(potions) {
+//     return this.potions
+//   }
+//     // Change code above this line
+// };
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 38 - додаємо нове зілля
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+
+//      this.potions.push(potionName)
+
+
+//     // Change code above this line
+//   },
+// };
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 39 - видаляємо зілля
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+
+//          return this.potions.splice(this.potions.indexOf(potionName), 1)
+
+//     // Change code above this line
+//   },
+// };
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 40 - оновлюємо зілля
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+
+//     // const potionIndex = this.potions.indexOf(oldName);
+//     // this.potions.splice(potionIndex, 1, newName);
+//     // return this.potions;
+      
+//       //* ИЛИ
+//     this.potions.splice(this.potions.indexOf(oldName), 1, newName);
+
+//     // Change code above this line
+//   },
+// };
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 41 - розширюємо інвентар - ADD, REMOVE, UPDATE

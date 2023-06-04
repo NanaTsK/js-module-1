@@ -9,7 +9,7 @@
   let commonElements = [];
 
   // Iterate through each element of the first array
-  for (let i = 0; i < array1.length; i++) {
+  for (let i = 0; i < array1.length; i += 1) {
     let currentElement = array1[i];
 
     // Check if the current element exists in the second array
