@@ -38,15 +38,58 @@ for (const key of keys) {
 }
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
+//* Масив об'єктів
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "На березі спокійних вод",
+    author: "Роберт Шеклі",
+    rating: 8.51,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
+];
 
+for (const book of books) {
+  // Об'єкт книги
+  console.log(book);
+  // Назва
+  console.log(book.title);
+  // Автор
+  console.log(book.author);
+  // Рейтинг
+  console.log(book.rating);
+}
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+function multiply(...args) {
+  console.log(args); // масив усіх аргументів
+}
 
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);
 //* ++++++++++++++++++++++++++++++++++++++++++++
 
+function multiply(firstNumber, secondNumber, ...otherArgs) {
+  console.log(firstNumber); // Значення першого аргументу
+  console.log(secondNumber); // Значення другого аргументу
+  console.log(otherArgs); // Масив інших аргументів
+}
+
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 

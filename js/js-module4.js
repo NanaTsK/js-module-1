@@ -102,19 +102,56 @@ repeat(3, prettyPrint);
 
 //* -----------------------------------
 
-
-
-//* -----------------------------------
-
-
+// const arr = [2, 4, 6];
+// const result = arr.filter((el) => el * 2);
+// console.log(result);
 
 //* -----------------------------------
 
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика"] },
+//   { name: "Полі", courses: ["інформатика", "математика"] },
+//   { name: "Ківі", courses: ["фізика", "біологія"] },
+// ];
 
+// const allCourses = students.flatMap(student => student.courses);
+// // ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
+
+// console.log(allCourses);
+
+// const uniqueCourses = allCourses.filter(
+//   (course, index, array) => array.indexOf(course) === index
+// );
+
+// console.log(uniqueCourses);
+
+//* -----------------------------------
+const LOW_SCORE = 50;
+const HIGH_SCORE = 80;
+const students = [
+  { name: "Манго", score: 83 },
+  { name: "Полі", score: 59 },
+  { name: "Аякс", score: 37 },
+  { name: "Ківі", score: 94 },
+  { name: "Х'юстон", score: 64 },
+];
+  
+const best = students.filter(student => student.score >= HIGH_SCORE);
+console.log(best);
+
+
+const worst = students.filter(student => student.score < LOW_SCORE);
+console.log(worst);
+
+const average = students.filter(student => student.score >= LOW_SCORE && student.score < HIGH_SCORE);
+console.log(average);
 
 //* -----------------------------------
 
-
+const mySet = new Set([1, 2, 1, 4, 3, 2]);
+const result = [...mySet];
+console.log(result);
+// result will be Array [1, 2, 4, 3]
 
 //* -----------------------------------
 
