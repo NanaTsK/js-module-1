@@ -177,17 +177,17 @@
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 9
 
-const emailInputName = "email";
-const passwordInputName = "password";
+// const emailInputName = "email";
+// const passwordInputName = "password";
 
-const credentials = {
-    [emailInputName]: "henry.carter@aptmail.com",
-[passwordInputName]: "jqueryismyjam"
-};
+// const credentials = {
+//     [emailInputName]: "henry.carter@aptmail.com",
+// [passwordInputName]: "jqueryismyjam"
+// };
 
 
-console.log(credentials.email); 
-console.log(credentials.password); 
+// console.log(credentials.email); 
+// console.log(credentials.password); 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 10
@@ -320,17 +320,17 @@ console.log(credentials.password);
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 15
 
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-// Change code below this line
-const keys = Object.keys(apartment);
-const values = Object.values(apartment);
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
 
-console.log(keys);
-console.log(values);
+// console.log(keys);
+// console.log(values);
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 16
@@ -474,7 +474,7 @@ console.log(values);
 //      return propValues;
 // }
 
-//* ИЛИ
+//* АБО
 // function getAllPropValues(propName) {
 //     const allValues = [];
 //     for (product of products) {
@@ -517,7 +517,7 @@ console.log(values);
 //     return 0
 // }
 
-//* ИЛИ
+//* АБО
 // function calculateTotalPrice(productName) {
 //     let totalPrice = 0;
 //     for (const product of products) {
@@ -702,17 +702,17 @@ console.log(values);
 //   },
 // ];
 
-//     //* ИЛИ
+//     //* АБО
 // for (const book of books) {
 //   console.log(book.title);
 //   console.log(book.author);
 //   console.log(book.rating);
 // }
 
-//     //* ИЛИ
+//     //* АБО
 // for (const book of books) {
 //     const { title, author, rating } = book;
-//     //* ИЛИ
+//     //* АБО
 // for (const { title, author, rating } of books) {
 
 //   console.log(title);
@@ -863,31 +863,31 @@ console.log(values);
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 29 - з'єднання масивів, ...spread
 
-const defaultSettings = {
-  theme: "light",
-  public: true,
-  withPassword: false,
-  minNumberOfQuestions: 10,
-  timePerQuestion: 60,
-};
-const overrideSettings = {
-  public: false,
-  withPassword: true,
-  timePerQuestion: 30,
-};
-// Change code below this line
-const finalSettings = {...defaultSettings, ...overrideSettings};
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {...defaultSettings, ...overrideSettings};
 
-console.log( finalSettings.theme );
-//дорівнює "light"
-console.log( finalSettings.public );
-//дорівнює "false"
-console.log( finalSettings.withPassword );
-//дорівнює "true"
-console.log( finalSettings.minNumberOfQuestions);
-//дорівнює 10
-console.log( finalSettings.timePerQuestion);
-//дорівнює 30
+// console.log( finalSettings.theme );
+// //дорівнює "light"
+// console.log( finalSettings.public );
+// //дорівнює "false"
+// console.log( finalSettings.withPassword );
+// //дорівнює "true"
+// console.log( finalSettings.minNumberOfQuestions);
+// //дорівнює 10
+// console.log( finalSettings.timePerQuestion);
+// //дорівнює 30
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
@@ -924,13 +924,13 @@ console.log( finalSettings.timePerQuestion);
 
 //*приклад завдання
 
-function multiply(...args) {
-  console.log(args); // масив усіх аргументів
-}
+// function multiply(...args) {
+//   console.log(args); // масив усіх аргументів
+// }
 
-multiply(1, 2);
-multiply(1, 2, 3);
-multiply(1, 2, 3, 4);
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
 
 //* завдання
 
@@ -943,7 +943,7 @@ multiply(1, 2, 3, 4);
 // return sum    // Change code above this line
 // }
 
-//*ИЛИ
+// //*АБО
 // function add(...args) {
 //     let sum = 0;
 // for (let arg of args) {
@@ -1004,29 +1004,29 @@ multiply(1, 2, 3, 4);
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 33 - Масив збігів
 
-// Change code below this line
-function findMatches(array1, ...numbers) {
-  const matches = []; //* Don't change this line
+// // Change code below this line
+// function findMatches(array1, ...numbers) {
+//   const matches = []; //* Don't change this line
 
-    for (let i = 0; i < array1.length; i += 1) { 
-        let currentElement = array1[i];
+//     for (let i = 0; i < array1.length; i += 1) { 
+//         let currentElement = array1[i];
 
-        if (numbers.includes(currentElement)) { 
-            matches.push(currentElement);
-        }
-    }
-  // Change code above this line
-  return matches;
-}
+//         if (numbers.includes(currentElement)) { 
+//             matches.push(currentElement);
+//         }
+//     }
+//   // Change code above this line
+//   return matches;
+// }
 
-console.log( findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
-//повертає [1, 2]
-console.log( findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
-//повертає [17, 89, 2]
-console.log( findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
-//повертає [24, 9, 41]
-console.log( findMatches([63, 11, 8, 29], 4, 7, 16));
-//повертає []
+// console.log( findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// //повертає [1, 2]
+// console.log( findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// //повертає [17, 89, 2]
+// console.log( findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// //повертає [24, 9, 41]
+// console.log( findMatches([63, 11, 8, 29], 4, 7, 16));
+// //повертає []
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 34
@@ -1154,7 +1154,7 @@ console.log( findMatches([63, 11, 8, 29], 4, 7, 16));
 //     // this.potions.splice(potionIndex, 1, newName);
 //     // return this.potions;
       
-//       //* ИЛИ
+//       //* АБО
 //     this.potions.splice(this.potions.indexOf(oldName), 1, newName);
 
 //     // Change code above this line

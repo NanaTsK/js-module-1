@@ -101,7 +101,7 @@ function calculateTotalPrice(orderedItems) {
     orderedItems.forEach(function (item, index) {
             totalPrice += orderedItems[index];
     });
-    //*ИЛИ
+    //*АБО
     //  orderedItems.forEach(function (number) {
     //     totalPrice += number;
     //   });
