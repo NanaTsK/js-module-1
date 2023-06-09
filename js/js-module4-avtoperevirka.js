@@ -121,39 +121,7 @@ console.log( calculateTotalPrice([412, 371, 94, 63, 176]));
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 6 - Фільтрація масиву чисел
 
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
-  // Change code below this line
 
-//   for (let i = 0; i < numbers.length; i += 1) {
-//     if (numbers[i] > value) {
-//       filteredNumbers.push(numbers[i]);
-//     }
-//   }
-     numbers.forEach(function (number, index) {
-            totalPrice += number[index];
-    });
-
-  // Change code above this line
-  return filteredNumbers;
-}
-
-console.log();
-
-console.log( filterArray([1, 2, 3, 4, 5], 3));
-//повертає [4, 5]
-console.log( filterArray([1, 2, 3, 4, 5], 4));
-//повертає [5]
-console.log(filterArray([1, 2, 3, 4, 5], 5));
-//повертає []
-console.log(filterArray([12, 24, 8, 41, 76], 38));
-//повертає [41, 76]
-console.log(filterArray([12, 24, 8, 41, 76], 20));
-//повертає [24, 41, 76]
-
-
-
-console.log();
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 7
