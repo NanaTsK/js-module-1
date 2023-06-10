@@ -159,3 +159,32 @@ console.table(cards);
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+  let newArr = [];
+function getExtremeElements(array) {
+  // Change code below this line
+  newArr[0] = array[0];
+  newArr[1] = array[array.length -1];
+  return newArr;
+  // Change code above this line
+}
+  
+
+
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   const firstElement = array[0];
+//   const lastElementIndex = array.length - 1;
+//   const lastElement = array[lastElementIndex];
+//   return [firstElement, lastElement];
+//   // Change code above this line
+// }
+
+
+console.log(Array);
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
