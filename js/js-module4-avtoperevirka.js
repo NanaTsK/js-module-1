@@ -760,79 +760,8 @@
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 23
+// use users array from N 22
 
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    gender: "male",
-    age: 37
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    gender: "female",
-    age: 34
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    gender: "male",
-    age: 24
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    gender: "female",
-    age: 21
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    gender: "male",
-    age: 27
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    gender: "male",
-    age: 38
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    gender: "female",
-    age: 39
-  }
-]
 
 // // Change code below this line
 // const getUsersWithAge = (users, minAge, maxAge) => 
@@ -848,7 +777,7 @@ const users = [
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 24 
-// use users array from previous example
+// use users array from N 22
 
 // // Change code below this line
 // const getUsersWithFriend = (users, friendName) => {
@@ -871,37 +800,243 @@ const users = [
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 25
-// use users array from previous example
+// use users array from N 22
 
-// Change code below this line
+// // Change code below this line
 
-const getFriends = (users) => {
+// const getFriends = (users) => {
 
-    const getAllFriends = users.flatMap(user => user.friends);
+//     const getAllFriends = users.flatMap(user => user.friends);
 
-    const uniqueFriends = getAllFriends.filter(
-    (friend, index, array) => array.indexOf(friend) === index
-)
-   return uniqueFriends
-};
-// Change code above this line
+//     const uniqueFriends = getAllFriends.filter(
+//     (friend, index, array) => array.indexOf(friend) === index
+// )
+//    return uniqueFriends
+// };
+// // Change code above this line
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 26
+// use users array from N 22
+
+// // Change code below this line
+// const getActiveUsers = (users) => {
+//     const activeUsers = users.filter(user => user.isActive === true)
+//     return activeUsers;
+// };
+// // Change code above this line
+
+// console.log(getActiveUsers(users));
+// //повертає масив об'єктів користувачів Sharlene Bush, Elma Head, Carey Barr і Sheree Anthony
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 27
+// use users array from N 22
+
+// // Change code below this line
+// const getInactiveUsers = (users) => {
+//    const inactiveUsers = users.filter(user => user.isActive !== true)
+//      return inactiveUsers;
+// };
+// // Change code above this line
+
+// console.log(getInactiveUsers(users));
+// //повертає масив об'єктів користувачів з іменами Moore Hensley, Ross Vazquez і Blackburn Dotson
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 28
 
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+ 
+// const bookByAuthor = books.find(book => book.author === AUTHOR)
+
+
+// console.log(bookWithTitle);
+// // це об'єкт книги з назвою вище "The Dream of a Ridiculous Man"
+// console.log(bookByAuthor);
+// // це об'єкт книги автора "Robert Sheckley"
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 29
+// use users array from N 22
+
+// // Change code below this line
+// const getUserWithEmail = (users, email) => {
+//     const userWithEmail = users.find(user => user.email === email);
+//    return userWithEmail
+// };
+// // Change code above this line
+
+
+// console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+// //повертає об'єкт користувача з ім'ям Sheree Anthony
+
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+// //повертає об'єкт користувача з ім'ям Elma Head
+
+// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
+// //повертає об'єкт користувача з ім'ям Blackburn Dotson
+
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 30
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every((value) => value % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((value) => value % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every((value) => value % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((value) => value % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every((value) => value % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 !== 0);
+
+
+// console.log(eachElementInFirstIsEven);
+// // це буль true
+// console.log(eachElementInFirstIsOdd);
+// // це буль false
+// console.log(eachElementInSecondIsEven);
+// // це буль false
+// console.log(eachElementInSecondIsOdd);
+// // це буль true
+// console.log(eachElementInThirdIsEven);
+// // це буль false
+// console.log(eachElementInThirdIsOdd);
+// // це буль false
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 31
+// use users array from N 22
+
+// // Change code below this line
+// const isEveryUserActive = (users) => {
+//     const activeUsers = users.every(user => user.isActive === true)
+//       return activeUsers;
+// };
+// // Change code above this line
+
+// console.log(isEveryUserActive);
+// //повертає false
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 32
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some((value) => value % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some((value) => value % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some((value) => value % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((value) => value % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some((value) => value % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((value) => value % 2 !== 0);
+
+// console.log(anyElementInFirstIsEven);
+// // це буль true
+// console.log(anyElementInFirstIsOdd);
+// // це буль false
+// console.log(anyElementInSecondIsEven);
+// // це буль false
+// console.log(anyElementInSecondIsOdd);
+// // це буль true
+// console.log(anyElementInThirdIsEven);
+// // це буль true
+// console.log(anyElementInThirdIsOdd);
+// // це буль true
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 33
+// use users array from N 22
+
+// // Change code below this line
+// const isAnyUserActive = users => {
+//     const activeUsers = users.some(user => user.isActive === true)
+//       return activeUsers;
+// };
+// // Change code above this line
+
+// console.log(isAnyUserActive(users));
+// //повертає true
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 34
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((previousValue, number) => { 
+//     return previousValue + number;
+// }, 0);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// console.log(playtimes);
+// //це масив[1270, 468, 710, 244]
+// console.log(totalPlayTime);
+// //це число 2692
+// console.log(averagePlayTime);
+// //це число 673
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 35
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 36
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 37
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 38
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 39
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 40
