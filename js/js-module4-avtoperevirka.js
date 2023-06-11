@@ -645,49 +645,246 @@
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 21 - метод filter()
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    rating: 8.51,
-  },
-  {
-    title: "The Dream of a Ridiculous Man",
-    author: "Fyodor Dostoevsky",
-    rating: 7.75,
-  },
-  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
-];
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
 
-const MIN_RATING = 8;
-const AUTHOR = "Bernard Cornwell";
-// Change code below this line
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+// // Change code below this line
 
-const topRatedBooks = books;
-const booksByAuthor = books;
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
 
-
+// console.log( topRatedBooks);
+// console.log(booksByAuthor);
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 22
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// // Change code below this line
+// const getUsersWithEyeColor = (users, color) => {
+//     const usersWith = users.filter(user => user.eyeColor === color)
+//     return usersWith;
+
+// };
+// // Change code above this line
+
+// console.log( getUsersWithEyeColor(users, "blue"));
+// // масив об'єктів користувачів з іменами Moore Hensley, Sharlene Bush і Carey Barr
+
+// console.log( getUsersWithEyeColor(users, "green"));
+// //повертає масив об'єктів з іменами Ross Vazquez і Elma Head
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 23
 
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male",
+    age: 37
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female",
+    age: 34
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male",
+    age: 24
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female",
+    age: 21
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    gender: "male",
+    age: 27
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    gender: "male",
+    age: 38
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female",
+    age: 39
+  }
+]
+
+// // Change code below this line
+// const getUsersWithAge = (users, minAge, maxAge) => 
+ 
+//    users.filter(user => {
+//        return user.age >= minAge && user.age <= maxAge
+
+// });
+// // Change code above this line
+
+// console.log(getUsersWithAge(users, "20", "30"));
+// //повертає масив об'єктів користувачів з іменами `Ross Vazquez`, `Elma Head` і `Carey Barr`
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ 24
+// * ЗАВДАННЯ 24 
+// use users array from previous example
+
+// // Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+    
+//     const usersWithFriend = users.filter(user =>
+//         user.friends.includes(friendName));
+//     return usersWithFriend
+   
+// };
+// // Change code above this line
+
+
+// console.log(getUsersWithFriend(users, "Briana Decker"));
+// // повертає масив об'єктів користувачів з іменами Sharlene Bush і Sheree Anthony
+// console.log(getUsersWithFriend(users, "Goldie Gentry"));
+// // повертає масив об'єктів користувачів з іменами Elma Head і Sheree Anthony
+// console.log(getUsersWithFriend(users, "Adrian Cross"));
+// // повертає порожній масив
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 25
+// use users array from previous example
+
+// Change code below this line
+
+const getFriends = (users) => {
+
+    const getAllFriends = users.flatMap(user => user.friends);
+
+    const uniqueFriends = getAllFriends.filter(
+    (friend, index, array) => array.indexOf(friend) === index
+)
+   return uniqueFriends
+};
+// Change code above this line
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
