@@ -209,49 +209,89 @@ console.log(letters);
  * Сортування об'єктів 
  */
 
-const students = [
-  { name: "Манго", score: 83 },
-  { name: "Полі", score: 59 },
-  { name: "Аякс", score: 37 },
-  { name: "Ківі", score: 94 },
-];
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+// ];
 
-const inAscendingScoreOrder = students.sort(
-  (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
-);
-console.log(inAscendingScoreOrder);
-// [ { name: 'Аякс', score: 37 },
-//   { name: 'Полі', score: 59 },
-//   { name: 'Манго', score: 83 },
-//   { name: 'Ківі', score: 94 } ]
+// const inAscendingScoreOrder = students.sort(
+//   (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+// );
+// console.log(inAscendingScoreOrder);
+// // [ { name: 'Аякс', score: 37 },
+// //   { name: 'Полі', score: 59 },
+// //   { name: 'Манго', score: 83 },
+// //   { name: 'Ківі', score: 94 } ]
 
-const inDescendingScoreOrder = students.sort(
-  (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
-);
-console.log(inDescendingScoreOrder);
-//[ { name: 'Ківі', score: 94 },
-  // { name: 'Манго', score: 83 },
-  // { name: 'Полі', score: 59 },
-  // { name: 'Аякс', score: 37 } ]
+// const inDescendingScoreOrder = students.sort(
+//   (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+// );
+// console.log(inDescendingScoreOrder);
+// //[ { name: 'Ківі', score: 94 },
+//   // { name: 'Манго', score: 83 },
+//   // { name: 'Полі', score: 59 },
+//   // { name: 'Аякс', score: 37 } ]
 
-const inAlphabeticalOrder = students.sort(
-  (firstStudent, secondStudent) =>
-  firstStudent.name.localeCompare(secondStudent.name)
-);
-console.log(inAlphabeticalOrder);
-// [ { name: 'Аякс', score: 37 },
-//   { name: 'Ківі', score: 94 },
-//   { name: 'Манго', score: 83 },
-//   { name: 'Полі', score: 59 } ]
+// const inAlphabeticalOrder = students.sort(
+//   (firstStudent, secondStudent) =>
+//   firstStudent.name.localeCompare(secondStudent.name)
+// );
+// console.log(inAlphabeticalOrder);
+// // [ { name: 'Аякс', score: 37 },
+// //   { name: 'Ківі', score: 94 },
+// //   { name: 'Манго', score: 83 },
+// //   { name: 'Полі', score: 59 } ]
 
-const inReversedOrder = students.sort(
-  (firstStudent, secondStudent) =>
-  secondStudent.name.localeCompare(firstStudent.name)
-);
-console.log(inReversedOrder);
-// [ { name: 'Полі', score: 59 },
-//   { name: 'Манго', score: 83 },
-//   { name: 'Ківі', score: 94 },
-//   { name: 'Аякс', score: 37 }]
+// const inReversedOrder = students.sort(
+//   (firstStudent, secondStudent) =>
+//   secondStudent.name.localeCompare(firstStudent.name)
+// );
+// console.log(inReversedOrder);
+// // [ { name: 'Полі', score: 59 },
+// //   { name: 'Манго', score: 83 },
+// //   { name: 'Ківі', score: 94 },
+// //   { name: 'Аякс', score: 37 }]
   
+//* -----------------------------------
+//* -----------------------------------
+//*** Ланцюжки методів */
+
+//* масив імен, відсортованих за зростанням балів за тест
+
+const students = [
+  { name: "Манго", score: 83, courses: ["математика", "фізика"] },
+  { name: "Полі", score: 59, courses: ["інформатика", "математика"] },
+  { name: "Аякс", score: 37, courses: ["фізика", "біологія"] },
+  { name: "Ківі", score: 94, courses: ["література", "інформатика"] },
+];
+//* БУЛО
+// const sortedByAscendingScore = [...students].sort((a, b) => a.score - b.score);
+// const names = sortedByAscendingScore.map(student => student.name);
+
+//* СТАЛО
+// const names = [...students]
+//   .sort((a, b) => a.score - b.score)
+//   .map(student => student.name);
+
+// console.log(names);
+// // ['Аякс', 'Полі', 'Манго', 'Ківі']
+
+//* -----------------------------------
+
+//*Отримаємо масив унікальних відвідуваних предметів, відсортований за алфавітом.
+
+const uniqueSortedCourses = students
+  .flatMap(student => student.courses)
+  .filter((course, index, array) => array.indexOf(course) === index)
+  .sort((firstCourse, secondCourse) => firstCourse.localeCompare(secondCourse))
+
+console.log(uniqueSortedCourses);
+ // ['біологія', 'інформатика', 'література', 'математика', 'фізика']
+
+//* -----------------------------------
+
+
+
 //* -----------------------------------
