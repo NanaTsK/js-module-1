@@ -1117,47 +1117,132 @@
 // //це масив[2016, 2012, 2008, 1997, 1984, 1973, 1967]
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ 40
+// * ЗАВДАННЯ 40 
+//*копія масиву authors
 
-const authors = [
-  "Tanith Lee",
-  "Bernard Cornwell",
-  "Robert Sheckley",
-  "Fyodor Dostoevsky",
-  "Howard Lovecraft",
-];
-// Change code below this line
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
 
-const authorsInAlphabetOrder = [...authors].sort((firstAuthor, secondAuthor) =>
-    firstAuthor.localeCompare(secondAuthor)
-);
-const authorsInReversedOrder = [...authors].sort((firstAuthor, secondAuthor) =>
-    secondAuthor.localeCompare(firstAuthor)
-);
+// const authorsInAlphabetOrder = [...authors].sort((firstAuthor, secondAuthor) =>
+//     firstAuthor.localeCompare(secondAuthor)
+// );
+// const authorsInReversedOrder = [...authors].sort((firstAuthor, secondAuthor) =>
+//     secondAuthor.localeCompare(firstAuthor)
+// );
 
-console.log(authors);
+// console.log(authors);
 
-console.log(authorsInAlphabetOrder);
-//це масив ["Bernard Cornwell", "Fyodor Dostoevsky", "Howard Lovecraft", "Robert Sheckley", "Tanith Lee"]
-console.log(authorsInReversedOrder);
-//це масив ["Tanith Lee", "Robert Sheckley", "Howard Lovecraft", "Fyodor Dostoevsky", "Bernard Cornwell"]
+// console.log(authorsInAlphabetOrder);
+// //це масив ["Bernard Cornwell", "Fyodor Dostoevsky", "Howard Lovecraft", "Robert Sheckley", "Tanith Lee"]
+// console.log(authorsInReversedOrder);
+// //це масив ["Tanith Lee", "Robert Sheckley", "Howard Lovecraft", "Fyodor Dostoevsky", "Bernard Cornwell"]
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 41
 
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
 
+// const sortedByAuthorName = [...books].sort((firstAuthor, secondAuthor) =>
+//     firstAuthor.author.localeCompare(secondAuthor.author)
+// );
+// const sortedByReversedAuthorName = [...books].sort((firstAuthor, secondAuthor) =>
+//     secondAuthor.author.localeCompare(firstAuthor.author)
+// );
+// const sortedByAscendingRating = [...books].sort((firstAuthor, secondAuthor) =>
+//     firstAuthor.rating - secondAuthor.rating
+// );
+// const sortedByDescentingRating = [...books].sort((firstAuthor, secondAuthor) =>
+//     secondAuthor.rating - firstAuthor.rating
+// );
+
+// console.log(sortedByAuthorName);
+// // [ { title: 'The Last Kingdom',
+// //     author: 'Bernard Cornwell',
+// //     rating: 8.38 },
+// //   { title: 'Enemy of God',
+// //     author: 'Bernard Cornwell',
+// //     rating: 8.67 },
+// //   { title: 'The Dream of a Ridiculous Man',
+// //     author: 'Fyodor Dostoevsky',
+// //     rating: 7.75 },
+// //   { title: 'Beside Still Waters',
+// //     author: 'Robert Sheckley',
+// //     rating: 8.51 },
+// //   { title: 'Redder Than Blood',
+// //     author: 'Tanith Lee',
+// //     rating: 7.94 } ]
+
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 42
+// use users array from N 22
 
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+   
+//     return [...users].sort((a, b) =>
+//     a.balance - b.balance)
+// };
+// // Change code above this line
+
+// console.log(sortByAscendingBalance(users));
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 43
+// use users array from N 22
 
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+   
+//  return [...users].sort((a, b) =>
+//     b.friends.length - a.friends.length)
+// };
+// // Change code above this line
+
+// console.log(sortByDescendingFriendCount(users));
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 44
+// use users array from N 22
 
+// // Change code below this line
+// const sortByName = users => {
+//     return [...users].sort(
+//         (firstUser, secondUser) =>
+//        firstUser.name.localeCompare(secondUser.name)
+//     )
+// };
+// // Change code above this line
+
+// console.log(sortByName(users));
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 45
