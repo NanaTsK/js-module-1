@@ -1074,10 +1074,104 @@
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 38
 
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+
+// console.log(releaseDates);
+// //це масив[2016, 1967, 2008, 1984, 1973, 2012, 1997]
+// console.log(ascendingReleaseDates);
+// //це масив[1967, 1973, 1984, 1997, 2008, 2012, 2016]
+
+// console.log(authors);
+// //це масив["Tanith Lee", "Bernard Cornwell", "Robert Sheckley", "Fyodor Dostoevsky"]
+// console.log(alphabeticalAuthors);
+// // [ 'Bernard Cornwell',
+// //   'Fyodor Dostoevsky',
+// //   'Robert Sheckley',
+// //   'Tanith Lee' ]
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 39
 
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// console.log(releaseDates);
+// //це масив[2016, 1967, 2008, 1984, 1973, 2012, 1997]
+
+// console.log(ascendingReleaseDates);
+// //це масив [1967, 1973, 1984, 1997, 2008, 2012, 2016]
+// console.log(descendingReleaseDates);
+// //це масив[2016, 2012, 2008, 1997, 1984, 1973, 1967]
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 40
+
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+  "Howard Lovecraft",
+];
+// Change code below this line
+
+const authorsInAlphabetOrder = [...authors].sort((firstAuthor, secondAuthor) =>
+    firstAuthor.localeCompare(secondAuthor)
+);
+const authorsInReversedOrder = [...authors].sort((firstAuthor, secondAuthor) =>
+    secondAuthor.localeCompare(firstAuthor)
+);
+
+console.log(authors);
+
+console.log(authorsInAlphabetOrder);
+//це масив ["Bernard Cornwell", "Fyodor Dostoevsky", "Howard Lovecraft", "Robert Sheckley", "Tanith Lee"]
+console.log(authorsInReversedOrder);
+//це масив ["Tanith Lee", "Robert Sheckley", "Howard Lovecraft", "Fyodor Dostoevsky", "Bernard Cornwell"]
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 41
+
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 42
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 43
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 44
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 45
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 46
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 47
+
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 48
+
+
