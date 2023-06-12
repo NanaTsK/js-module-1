@@ -1022,13 +1022,54 @@
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 35
 
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((averageTime, {playtime, gamesPlayed}) => {
+//     return averageTime + playtime / gamesPlayed;
+// }, 0);
+
+// console.log(totalAveragePlaytimePerGame); 
+// //це число 1023
+
+
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 36
+// use users array from N 22
 
+// // Change code below this line
+// const calculateTotalBalance = users => {
+//     return users.reduce((totalBalance, user) =>
+//     { return totalBalance + user.balance }, 0)
+// };
+// // Change code above this line
+
+// //* АБО
+// // const calculateTotalBalance = users.reduce(
+// //     (totalBalance, user) => totalBalance + user.balance, 0
+// // );
+
+
+// console.log(calculateTotalBalance(users)); 
+// //це число 20916
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 37
+// use users array from N 22
 
+// // Change code below this line
+// const getTotalFriendCount = users => {
+//     return users.reduce((total, user) => total + user.friends.length, 0);
+// };
+// // Change code above this line
+
+// console.log(getTotalFriendCount(users)); 
+// //це число 14
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 38

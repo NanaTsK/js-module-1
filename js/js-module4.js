@@ -126,25 +126,25 @@ repeat(3, prettyPrint);
 // console.log(uniqueCourses);
 
 //* -----------------------------------
-const LOW_SCORE = 50;
-const HIGH_SCORE = 80;
-const students = [
-  { name: "Манго", score: 83 },
-  { name: "Полі", score: 59 },
-  { name: "Аякс", score: 37 },
-  { name: "Ківі", score: 94 },
-  { name: "Х'юстон", score: 64 },
-];
+// const LOW_SCORE = 50;
+// const HIGH_SCORE = 80;
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
   
-const best = students.filter(student => student.score >= HIGH_SCORE);
-console.log(best);
+// const best = students.filter(student => student.score >= HIGH_SCORE);
+// console.log(best);
 
 
-const worst = students.filter(student => student.score < LOW_SCORE);
-console.log(worst);
+// const worst = students.filter(student => student.score < LOW_SCORE);
+// console.log(worst);
 
-const average = students.filter(student => student.score >= LOW_SCORE && student.score < HIGH_SCORE);
-console.log(average);
+// const average = students.filter(student => student.score >= LOW_SCORE && student.score < HIGH_SCORE);
+// console.log(average);
 
 //* -----------------------------------
 
@@ -155,6 +155,103 @@ console.log(result);
 
 //* -----------------------------------
 
+//** SORT */ sort()
+// const scores = [27, 2, 41, 4, 7, 3, 75];
+// scores.sort();
+// console.log(scores);
+// // [2, 27, 3, 4, 41, 7, 75]
+//* -----------------------------------
 
+const letters = ["b", "B", "a", "A", "c", "C"];
+letters.sort();
+console.log(letters);
+// ['A', 'B', 'C', 'a', 'b', 'c']
 
+//* -----------------------------------
+
+// const scores = [61, 19, 74, 35, 92, 56];
+// const ascendingScores = [...scores].sort();
+
+// console.log(scores); // [61, 19, 74, 35, 92, 56]
+// console.log(ascendingScores); // [19, 35, 56, 61, 74, 92]
+
+//* -----------------------------------
+/*
+ * compareFunction(a, b) - для зазначення свого порядку сортування
+ */
+
+// const scores = [61, 19, 74, 35, 92, 56];
+// const ascendingScores = [...scores].sort((a, b) => a - b);
+// console.log(ascendingScores); // [19, 35, 56, 61, 74, 92]
+
+//* -----------------------------------
+// const scores = [61, 19, 74, 35, 92, 56];
+// const descendingScores = [...scores].sort((a, b) => b - a);
+// console.log(descendingScores); // [92, 74, 61, 56, 35, 19]
+
+//* -----------------------------------
+/*
+ * localeCompare() - метод рядків для сортування рядків в алфавітному порядку, за зростанням або спаданням 
+ */
+
+// const students = ["Віка", "Андрій", "Олег", "Юля", "Борис", "Катя"];
+
+// const inAlphabetOrder = [...students].sort((a, b) => a.localeCompare(b));
+// console.log(inAlphabetOrder);
+// // ['Андрій', 'Борис', 'Віка', 'Катя', 'Олег', 'Юля']
+
+// const inReversedOrder = [...students].sort((a, b) => b.localeCompare(a));
+// console.log(inReversedOrder);
+// // ['Юля', 'Олег', 'Катя', 'Віка', 'Борис', 'Андрій']
+
+//* -----------------------------------
+/*
+ * Сортування об'єктів 
+ */
+
+const students = [
+  { name: "Манго", score: 83 },
+  { name: "Полі", score: 59 },
+  { name: "Аякс", score: 37 },
+  { name: "Ківі", score: 94 },
+];
+
+const inAscendingScoreOrder = students.sort(
+  (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
+);
+console.log(inAscendingScoreOrder);
+// [ { name: 'Аякс', score: 37 },
+//   { name: 'Полі', score: 59 },
+//   { name: 'Манго', score: 83 },
+//   { name: 'Ківі', score: 94 } ]
+
+const inDescendingScoreOrder = students.sort(
+  (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
+);
+console.log(inDescendingScoreOrder);
+//[ { name: 'Ківі', score: 94 },
+  // { name: 'Манго', score: 83 },
+  // { name: 'Полі', score: 59 },
+  // { name: 'Аякс', score: 37 } ]
+
+const inAlphabeticalOrder = students.sort(
+  (firstStudent, secondStudent) =>
+  firstStudent.name.localeCompare(secondStudent.name)
+);
+console.log(inAlphabeticalOrder);
+// [ { name: 'Аякс', score: 37 },
+//   { name: 'Ківі', score: 94 },
+//   { name: 'Манго', score: 83 },
+//   { name: 'Полі', score: 59 } ]
+
+const inReversedOrder = students.sort(
+  (firstStudent, secondStudent) =>
+  secondStudent.name.localeCompare(firstStudent.name)
+);
+console.log(inReversedOrder);
+// [ { name: 'Полі', score: 59 },
+//   { name: 'Манго', score: 83 },
+//   { name: 'Ківі', score: 94 },
+//   { name: 'Аякс', score: 37 }]
+  
 //* -----------------------------------
