@@ -573,7 +573,39 @@
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 18
 
-    class User {
+//     class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Change code below this line
+
+// class Admin extends User { 
+//   static AccessLevel = { 
+//     BASIC: "basic",
+//     SUPERUSER: "superuser"
+//   }
+// }  
+
+// console.log(Admin.AccessLevel.BASIC);
+// // повертає рядок "basic"
+// console.log(Admin.AccessLevel.SUPERUSER);
+// // повертає рядок "superuser"
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+// * ЗАВДАННЯ 19
+
+class User {
+  email;
+
   constructor(email) {
     this.email = email;
   }
@@ -586,12 +618,28 @@
     this.email = newEmail;
   }
 }
-// Change code below this line
 
+class Admin extends User {
+  // Change code below this line
 
+  static AccessLevel = {
+    BASIC: "basic",
+    SUPERUSER: "superuser",
+  };
 
-//* ++++++++++++++++++++++++++++++++++++++++++++
-// * ЗАВДАННЯ 19
+  // Change code above this line
+}
+
+const mango = new Admin({
+  email: "mango@mail.com",
+  accessLevel: Admin.AccessLevel.SUPERUSER,
+});
+
+console.log(mango.email);
+// "mango@mail.com"
+console.log(mango.accessLevel);
+// "superuser"
+
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 20

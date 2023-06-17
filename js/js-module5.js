@@ -491,31 +491,93 @@
 // ** Наслідування класів - extends 
 //*
 
-class Child extends Parent {
-  // ...
-}
+// class Child extends Parent {
+//   // ...
+// }
  //* ++++++++++++++++++++++++++++++++++++++++++++
 
-class User {
-  #email;
+// class User {
+//   #email;
 
-  constructor(email) {
-    this.#email = email;
-  }
+//   constructor(email) {
+//     this.#email = email;
+//   }
 
-  get email() {
-    return this.#email;
-  }
+//   get email() {
+//     return this.#email;
+//   }
 
-  set email(newEmail) {
-    this.#email = newEmail;
-  }
-}
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
 
-class ContentEditor extends User {
-  // Тіло класу ContentEditor
-}
+// class ContentEditor extends User {
+//   // Тіло класу ContentEditor
+// }
 
-const editor = new ContentEditor("mango@mail.com");
-console.log(editor); // { email: "mango@mail.com" }
-console.log(editor.email); // "mango@mail.com"
+// const editor = new ContentEditor("mango@mail.com");
+// console.log(editor);
+// // { email: "mango@mail.com" }
+// console.log(editor.email);
+// // "mango@mail.com"
+
+
+// //*_____________________________________________
+//* ++++++++++++++++++++++++++++++++++++++++++++
+//* 
+// ** Конструктор дочірнього класу - super(аргументи)
+//*
+// class User {
+//   #email;
+
+//   constructor(email) {
+//     this.#email = email;
+//   }
+
+//   get email() {
+//     return this.#email;
+//   }
+
+//   set email(newEmail) {
+//     this.#email = newEmail;
+//   }
+// }
+
+// class ContentEditor extends User {
+//   constructor({ email, posts }) {
+//     // Виклик конструктора батьківського класу User
+//     super(email);
+//     this.posts = posts;
+//   }
+// }
+
+// const editor = new ContentEditor({ email: "mango@mail.com", posts: [] });
+// console.log(editor);
+// // { email: 'mango@mail.com', posts: [] }
+// console.log(editor.email);
+// // 'mango@mail.com'
+
+// //*_____________________________________________
+//* ++++++++++++++++++++++++++++++++++++++++++++
+//* 
+// ** Методи дочірнього класу
+//*
+// Уявімо, що вище є оголошення класу User
+
+// class ContentEditor extends User {
+//   constructor({ email, posts }) {
+//     super(email);
+//     this.posts = posts;
+//   }
+
+//   addPost(post) {
+//     this.posts.push(post);
+//   }
+// }
+
+// const editor = new ContentEditor({ email: "mango@mail.com", posts: [] });
+// console.log(editor); // { email: 'mango@mail.com', posts: [] }
+// console.log(editor.email); // 'mango@mail.com'
+// editor.addPost("post-1");
+// console.log(editor.posts); // ['post-1']
