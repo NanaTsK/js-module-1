@@ -581,3 +581,34 @@
 // console.log(editor.email); // 'mango@mail.com'
 // editor.addPost("post-1");
 // console.log(editor.posts); // ['post-1']
+
+//* ++++++++++++++++++++++++++++++++++++++++++++
+
+// class Foo {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   getNameSeparator() {
+//     return '-';
+//   }
+// }
+
+// class FooBar extends Foo {
+//   constructor(name, index) {
+//     super(name);
+//     this.index = index;
+//   }
+
+//   getFullName() {
+//     return this.name + super.getNameSeparator() + this.index;
+//   }
+// }
+
+// const firstFooBar = new FooBar('foo', 1);
+
+// console.log(firstFooBar.name);
+// // Expected output: "foo"
+
+// console.log(firstFooBar.getFullName());
+// // Expected output: "foo-1"
