@@ -465,22 +465,57 @@
 // ** Статичні методи
 //*
 
+// class User {
+//   static #takenEmails = [];
+
+//   static isEmailTaken(email) {
+//     return User.#takenEmails.includes(email);
+//   }
+
+//   #email;
+
+//   constructor({ email }) {
+//     this.#email = email;
+//     User.#takenEmails.push(email);
+//   }
+// }
+
+// const mango = new User({ email: "mango@mail.com" });
+
+// console.log(User.isEmailTaken("poly@mail.com"));
+// console.log(User.isEmailTaken("mango@mail.com"));
+
+// //*_____________________________________________
+//* ++++++++++++++++++++++++++++++++++++++++++++
+//* 
+// ** Наслідування класів - extends 
+//*
+
+class Child extends Parent {
+  // ...
+}
+ //* ++++++++++++++++++++++++++++++++++++++++++++
+
 class User {
-  static #takenEmails = [];
-
-  static isEmailTaken(email) {
-    return User.#takenEmails.includes(email);
-  }
-
   #email;
 
-  constructor({ email }) {
+  constructor(email) {
     this.#email = email;
-    User.#takenEmails.push(email);
+  }
+
+  get email() {
+    return this.#email;
+  }
+
+  set email(newEmail) {
+    this.#email = newEmail;
   }
 }
 
-const mango = new User({ email: "mango@mail.com" });
+class ContentEditor extends User {
+  // Тіло класу ContentEditor
+}
 
-console.log(User.isEmailTaken("poly@mail.com"));
-console.log(User.isEmailTaken("mango@mail.com"));
+const editor = new ContentEditor("mango@mail.com");
+console.log(editor); // { email: "mango@mail.com" }
+console.log(editor.email); // "mango@mail.com"
