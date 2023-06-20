@@ -1284,18 +1284,18 @@
 // * ЗАВДАННЯ 46
 // use users array from N 22
 
-// // Change code below this line
-// const getNamesSortedByFriendCount = users => {
+// Change code below this line
+const getNamesSortedByFriendCount = users => {
    
-//     return [...users]
-//         .sort((a, b) => a.friends.length - b.friends.length)
-//         .map(user => user.name)
-// };
-// // Change code above this line
+    return [...users]
+        .sort((a, b) => a.friends.length - b.friends.length)
+        .map(user => user.name)
+};
+// Change code above this line
 
 
-// console.log(getNamesSortedByFriendCount(users));
-// //["Moore Hensley", "Sharlene Bush", "Elma Head", "Sheree Anthony", "Ross Vazquez", "Carey Barr", "Blackburn Dotson"]
+console.log(getNamesSortedByFriendCount(users));
+//["Moore Hensley", "Sharlene Bush", "Elma Head", "Sheree Anthony", "Ross Vazquez", "Carey Barr", "Blackburn Dotson"]
 
 //* ++++++++++++++++++++++++++++++++++++++++++++
 // * ЗАВДАННЯ 47
@@ -1318,7 +1318,7 @@
 // * ЗАВДАННЯ 48
 // use users array from N 22
 
-// // Change code below this line
+// Change code below this line
 // const getTotalBalanceByGender = (users, gender) => {
 
 //         return [...users]
@@ -1326,12 +1326,12 @@
 //         .map(user => user.balance)
 //         .reduce((totalBalance, balance) => totalBalance + balance, 0)
 // };
-// // Change code above this line
+// Change code above this line
 
-// console.log(getTotalBalanceByGender(users, "male"));
-// //функція повертає число 12053
-// console.log(getTotalBalanceByGender(users, "female"));
-// //функція повертає число 8863
+console.log(getTotalBalanceByGender(users, "male"));
+//функція повертає число 12053
+console.log(getTotalBalanceByGender(users, "female"));
+//функція повертає число 8863
 
 
 //* ++++++++++++++++++++++++++++++++++++++++++++

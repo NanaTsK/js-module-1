@@ -1,10 +1,73 @@
 "use strict";
 
+//*_____________________________________________
+//*==============//*** Оператор перевірки наявності - !!~
 
-// const someString = "it`s my car!";
-// const template = "car";
-// console.log(!!~someString.indexOf(template))
-// // замість індекса прийде true
+
+const someString = "it`s my car!";
+const template = "car";
+console.log(!!~someString.indexOf(template))
+// замість індекса прийде true
+
+//*_____________________________________________
+//* ++++++++++++++++++++++++++++++++++++++++++++
+//                                Методи функцій
+//*_____________________________________________
+//*==============//*** Метод call() 
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
+// const mango = {
+//   username: "Манго",
+// };
+// const poly = {  username: "Полі",
+// };
+
+// greetGuest.call(mango, "Ласкаво просимо"); // Ласкаво просимо, Манго.
+// greetGuest.call(poly, "З прибуттям"); // З прибуттям, Полі.
+
+//*_____________________________________________
+//*==============//*** Метод apply 
+
+// function greetGuest(greeting) {
+//   console.log(`${greeting}, ${this.username}.`);
+// }
+
+// const mango = {
+//   username: "Манго",
+// };
+// const poly = {
+//   username: "Полі",
+// };
+
+// greetGuest.apply(mango, ["Ласкаво просимо"]); // Ласкаво просимо, Манго.
+// greetGuest.apply(poly, ["З прибуттям"]); // З прибуттям, Полі.
+
+
+//*_____________________________________________
+//*==============//*** Метод bind() 
+// function greet(clientName) {
+//   return `${clientName}, ласкаво просимо в «${this.service}».`;
+// }
+
+// const steam = {
+//   service: "Steam",
+// };
+// const steamGreeter = greet.bind(steam);
+// steamGreeter("Манго"); // "Манго, ласкаво просимо в «Steam»."
+
+// const gmail = {
+//   service: "Gmail",
+// };
+// const gmailGreeter = greet.bind(gmail);
+// gmailGreeter("Полі"); // "Полі, ласкаво просимо в «Gmail»."
+
+
+// console.log(steamGreeter("Манго"));
+// console.log(steamGreeter("Полі"));
+
+
 
 //*_____________________________________________
 //*==============//*** THIS ***//==============*//
@@ -612,3 +675,5 @@
 
 // console.log(firstFooBar.getFullName());
 // // Expected output: "foo-1"
+
+//*=======
