@@ -65,9 +65,40 @@ console.log(!!~someString.indexOf(template))
 
 
 // console.log(steamGreeter("Манго"));
-// console.log(steamGreeter("Полі"));
+// console.log(gmailGreeter("Полі"));
 
+//*_____________________________________________
 
+// const customer = {
+//     firstName: "Jacob",
+//     lastName: "Mercer",
+//     getFullName() {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   };
+  
+//   function makeMessage(callback) {
+//     // callback() - це виклик методу getFullName без об'єкта
+//     console.log(`Обробляємо заявку від ${callback()}.`);
+//   }
+  
+// // ❌ Було
+// // makeMessage(customer.getFullName); // Виникне помилка на момент виклику функції
+// // ✅ Стало
+// makeMessage(customer.getFullName.bind(customer)); // Обробляємо заявку від Jacob Mercer.
+
+//*_____________________________________________
+
+// const person = { name: 'Mango' };
+
+// function sayHi(age) {
+//   return `${this.name} is ${age}`;
+// }
+
+// console.log(sayHi.call(person, 18));
+// //Mango is 18 
+// console.log(sayHi.bind(person, 18));
+// //function 
 
 //*_____________________________________________
 //*==============//*** THIS ***//==============*//
@@ -677,3 +708,5 @@ console.log(!!~someString.indexOf(template))
 // // Expected output: "foo-1"
 
 //*=======
+
+
