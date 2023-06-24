@@ -285,18 +285,208 @@
 
 //*_____________________________________________
 
-const cart = [
-  {label: "Apples", price: 100, quantity: 2},
-  {label: "Bananas", price: 120, quantity: 3},
-  {label: "Lemons", price: 70, quantity: 4},
+// const cart = [
+//   {label: "Apples", price: 100, quantity: 2},
+//   {label: "Bananas", price: 120, quantity: 3},
+//   {label: "Lemons", price: 70, quantity: 4},
+// ];
+
+// // const totalAmount = cart.reduce((total, item) => {
+// //   return total + item.price * item.quantity; 
+// // }, 0);
+// //* АБО
+// const totalAmount = cart.reduce((total, {price, quantity}) => 
+
+//   total + price * quantity , 0);
+
+// console.log(totalAmount); //840 
+
+//*_____________________________________________
+
+/* 1-собираем все теги из твитов
+*/
+// const tweets = [
+// {id: "000", likes: 5, tags: ["js", "nodejs"]},
+// {id: "001", likes: 2, tags: ["html", "css"]},
+// {id: "002", likes: 17, tags: ["html", "js", "nodejs"]},
+// {id: "003", likes: 8, tags: ["css", "react"]},
+// {id: "004", likes: 0, tags: ["js", "nodejs", "react"]},
+// ];
+
+//* БУЛО
+// const allTags = tweets.reduce((tags, tweet) => {
+//   tags.push(...tweet.tags)
+//   return tags
+// }, []);
+
+//* СТАЛО
+// const allTags = tweets.reduce((tags, tweet) => [...tags, ...tweet.tags], []);
+
+// //* АБО
+// // const allTags = tweets.reduce((tags, tweet) => {return [...tags, ...tweet.tags]}, []);
+
+// console.log(allTags); 
+// //масив усіх тегів 
+
+// /* 2-статистка тегов
+// */
+// // const tagsStats = allTags.reduce((acc, tag) => {
+// // console.log(acc);
+
+// //   if(acc[tag]) {
+// //     acc[tag] +=1;
+
+// //     return acc;
+// //   }
+
+// //   acc[tag] = 1;
+// //   return acc
+// // }, {});
+
+// //* АБО
+
+// // const tagsStats = allTags.reduce((acc, tag) => ({
+// //       ...acc,
+// //       [tag]: acc[tag] ? acc[tag] + 1 : 1,
+// //     }), 
+// //     {});
+
+//     //* АБО
+//     const tagsStats = allTags.reduce((acc, tag) => {
+//       return {
+//         ...acc,
+//         [tag]: acc[tag] ? acc[tag] + 1 : 1,
+//       }; 
+//     }, {});
+
+
+// console.log(tagsStats);
+
+//*_____________________________________________
+
+/* acc[tag] explained:
+*/
+
+// const user = {
+//   name: "Mango",
+// };
+// const key = "name";
+
+// console.log(user["name"]);
+
+
+//*_____________________________________________
+//*==============      Sort
+
+/* сортировка сложных объектов
+*/
+
+// const players = [
+//   { id: 'player-1', name: 'Mango', timePlayed: 310, online: false },
+//   { id: 'player-2', name: 'Poly', timePlayed: 470, online: true },
+//   { id: 'player-3', name: 'Kiwi', timePlayed: 230, online: true },
+//   { id: 'player-4', name: 'Ajax', timePlayed: 150, online: false },
+//   { id: 'player-5', name: 'Chelsey', timePlayed: 80, online: true },
+// ]; 
+// //по игровому времени:
+// const sortedByWorstPayers = [...players].sort((prevPlayer, nextPlayer) => 
+// prevPlayer.timePlayed - nextPlayer.timePlayed);
+// console.log(sortedByWorstPayers);
+
+// // │ (index) │     id     │   name    │ timePlayed │ online │ 
+// // ├─────────┼────────────┼───────────┼────────────┼────────┤ 
+// // │    0    │ 'player-5' │ 'Chelsey' │     80     │  true  │ 
+// // │    1    │ 'player-4' │  'Ajax'   │    150     │ false  │ 
+// // │    2    │ 'player-3' │  'Kiwi'   │    230     │  true  │ 
+// // │    3    │ 'player-1' │  'Mango'  │    310     │ false  │ 
+// // │    4    │ 'player-2' │  'Poly'   │    470     │  true  │ 
+
+// const sortedByBestPayers = [...players].sort((prevPlayer, nextPlayer) => 
+// nextPlayer.timePlayed - prevPlayer.timePlayed);
+// console.log(sortedByBestPayers);
+
+
+// //по имени:
+// const sortedByName = [...players].sort((prevPlayer, nextPlayer) => {
+//   const result = prevPlayer.name[0] > nextPlayer.name[0];
+//   if (result) {
+//     return 1;
+//   }
+//   if (!result) {
+//     return -1;  
+//   }
+// });
+// console.log(sortedByName);
+
+//*_____________________________________________
+//*==============      flatMap
+
+
+// const tweets = [
+//   { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+//   { id: '001', likes: 2, tags: ['html', 'css'] },
+//   { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+//   { id: '003', likes: 8, tags: ['css', 'react'] },
+//   { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+// ];
+
+// //* БУЛО
+// // const tags = tweets.reduce((acc, tweet) => [...acc, ...tweet.tags],
+// // []);
+
+// //* АБО
+// // const tags = tweets.map(t => t.tags).flat();
+
+// //* = СТАЛО
+// const tags = tweets.flatMap(t => t.tags);
+
+// console.log(tags)
+
+
+//*_____________________________________________
+//*==============      chaining
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const sorted = numbers
+// .filter(num => num > 2)
+// .map(num => num * 3)
+// .sort((a, b) => a - b);
+
+
+// console.log(sorted);
+
+//*_____________________________________________
+
+const players = [
+  { id: 'player-1', name: 'Mango', timePlayed: 310, online: false, rank: 800 },
+  { id: 'player-2', name: 'Poly', timePlayed: 470, online: true, rank: 600 },
+  { id: 'player-3', name: 'Kiwi', timePlayed: 230, online: true, rank: 100 },
+  { id: 'player-4', name: 'Ajax', timePlayed: 150, online: false, rank: 400 },
+  { id: 'player-5', name: 'Chelsey', timePlayed: 80, online: true, rank: 500 },
 ];
 
-// const totalAmount = cart.reduce((total, item) => {
-//   return total + item.price * item.quantity; 
-// }, 0);
-//* АБО
-const totalAmount = cart.reduce((total, {price, quantity}) => 
+const onlineAndSorted = players
+.filter(player => player.online)
+.sort((playerA, playerB) => playerA.rank - playerB.rank)
 
-  total + price * quantity , 0);
+console.log(onlineAndSorted);
 
-console.log(totalAmount); //840 
+// ┌─────────┬────────────┬───────────┬────────────┬────────┬──────┐ 
+// │ (index) │     id     │   name    │ timePlayed │ online │ rank │ 
+// ├─────────┼────────────┼───────────┼────────────┼────────┼──────┤ 
+// │    0    │ 'player-3' │  'Kiwi'   │    230     │  true  │ 100  │ 
+// │    1    │ 'player-5' │ 'Chelsey' │     80     │  true  │ 500  │ 
+// │    2    │ 'player-2' │  'Poly'   │    470     │  true  │ 600  │ 
+// └─────────┴────────────┴───────────┴────────────┴────────┴──────┘ 
+
+//*_____________________________________________
+//*==============      instead of get, instead of if
+
+const user = {
+  name: "mango"
+}
+console.log(user?.name);
+
+//*_____________________________________________
+//*==============      xxx
