@@ -56,21 +56,21 @@
 //*_____________________________________________
 //*==============        this
 
-// const showThis = function(a, b, c) {
-//     console.log(a, b, c)
-//     console.log("show -> this", this)
-// };
-// // showThis(); //show -> this undefined
+const showThis = function(a, b, c) {
+    console.log(a, b, c)
+    console.log("show -> this", this)
+};
+// showThis(); //show -> this undefined
 
-// const objA = {
-//     a: 5,
-//     b: 10
-// };
-// showThis.call(objA, 10, 20, 30); //show -> this { a: 5, b: 10 }
-// // = 
-// showThis.apply(objA, [10, 20, 30]); //show -> this { a: 5, b: 10 }
+const objA = {
+    a: 5,
+    b: 10
+};
+showThis.call(objA, 10, 20, 30); //show -> this { a: 5, b: 10 }
+// = 
+showThis.apply(objA, [10, 20, 30]); //show -> this { a: 5, b: 10 }
 
-// call / apply принудительно вызывают
+//call / apply принудительно вызывают
 
 //*_____________________________________________
 //*==============       Метод call() / Метод apply()
@@ -110,4 +110,11 @@
 // changeSweaterColor("red");
 // console.log(sweater); //{ color: 'red' }
 
+
+//*_____________________________________________
+//*==============   [[Prototype]] - __proto__
+
+// const objC = (
+//     z: 5,
+// )
 
