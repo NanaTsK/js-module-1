@@ -56,19 +56,19 @@
 //*_____________________________________________
 //*==============        this
 
-const showThis = function(a, b, c) {
-    console.log(a, b, c)
-    console.log("show -> this", this)
-};
-// showThis(); //show -> this undefined
+// const showThis = function(a, b, c) {
+//     console.log(a, b, c)
+//     console.log("show -> this", this)
+// };
+// // showThis(); //show -> this undefined
 
-const objA = {
-    a: 5,
-    b: 10
-};
-showThis.call(objA, 10, 20, 30); //show -> this { a: 5, b: 10 }
-// = 
-showThis.apply(objA, [10, 20, 30]); //show -> this { a: 5, b: 10 }
+// const objA = {
+//     a: 5,
+//     b: 10
+// };
+// showThis.call(objA, 10, 20, 30); //show -> this { a: 5, b: 10 }
+// // = 
+// showThis.apply(objA, [10, 20, 30]); //show -> this { a: 5, b: 10 }
 
 //call / apply принудительно вызывают
 
@@ -112,9 +112,131 @@ showThis.apply(objA, [10, 20, 30]); //show -> this { a: 5, b: 10 }
 
 
 //*_____________________________________________
-//*==============   [[Prototype]] - __proto__
+//*==============   [[Prototype]] - __proto__ - Прототипне наслідування
 
-// const objC = (
-//     z: 5,
-// )
+const objC = {
+    z: 5,
+};
 
+const objB = Object.create(objC);
+objB.y = 2;
+
+const objA = Object.create(objB);
+objA.x = 1;
+
+console.log(objC); //{ z: 5 }
+console.log(objC.hasOwnProperty("z")); //true
+
+console.log(objB); //{}
+console.log(objB.hasOwnProperty("z")); //false
+
+console.log(objB.y); //2
+console.log(objB.z); //5
+
+console.log(objA); //{ x: 1 }
+console.log(objA.hasOwnProperty("z")); //false
+
+console.log(objA.y); //2
+console.log(objA.z); //5
+
+//* присваивание своего z в objA:
+objA.z = 1000;
+console.log("objA", objA); //objA { x: 1, z: 1000 }
+console.log(objA.hasOwnProperty("z")); //true
+
+
+
+//*_____________________________________________
+//*==============   ** Конструктор класу - constructor
+
+// const Car = function() {
+//     console.log(this); //Car {}
+
+//     this.a = 555;
+// };
+
+// const myCar = new Car();
+
+// console.log(myCar); //Car { a: 555 }
+
+//*============== 
+// const Car = function(value) {
+//     console.log(this); //Car {} Car {} Car {}
+
+//     this.a = value;
+// };
+
+// const myCar1 = new Car(5);
+// console.log(myCar1); //Car { a: 5 }
+
+// const myCar2 = new Car(10);
+// console.log(myCar2); //Car { a: 10 }
+
+// const myCar3 = new Car(25);
+// console.log(myCar3); //Car { a: 25 }
+
+
+//*============== 
+// const Car = function(brand, color, price) {
+//     console.log(this); //Car {} Car {} Car {}
+
+//     this.brand = brand;
+//     this.color = color;
+//     this.price = price;
+// };
+
+// const myCar1 = new Car("Mazda", "red", 10000);
+// console.log(myCar1);
+// //Car { brand: 'Mazda', color: 'red', price: 10000 }
+
+// const myCar2 = new Car("Daihatsu", "grey", 5000);
+// console.log(myCar2); 
+// //Car { brand: 'Daihatsu', color: 'grey', price: 5000 }
+
+// const myCar3 = new Car("Volvo", "blue", 12000);
+// console.log(myCar3); 
+// //Car { brand: 'Volvo', color: 'blue', price: 12000 }
+
+//** АБО деструктуризовано + changePrice
+
+const Car = function({brand, color, price} = {}) {
+    console.log(this); //Car {} Car {} Car {}
+
+    this.brand = brand;
+    this.color = color;
+    this.price = price;
+
+    this.changePrice = function () {
+        this.price = newPrice
+    };
+};
+
+const myCar1 = new Car({
+    brand: "Mazda",
+    color: "red",
+    price: 10000,
+});
+console.log(myCar1);
+//Car { brand: 'Mazda', color: 'red', price: 10000 }
+
+const myCar2 = new Car({
+    brand: "Daihatsu",
+    color: "grey",
+    price: 5000,
+});
+console.log(myCar2); 
+//Car { brand: 'Daihatsu', color: 'grey', price: 5000 }
+
+const myCar3 = new Car({
+    brand: "Volvo",
+    color: "blue",
+    price: 12000,
+});
+console.log(myCar3); 
+//Car { brand: 'Volvo', color: 'blue', price: 12000 }
+
+
+
+
+//*_____________________________________________
+//*==============   ** Конструктор класу - constructor
