@@ -114,35 +114,35 @@
 //*_____________________________________________
 //*==============   [[Prototype]] - __proto__ - Прототипне наслідування
 
-const objC = {
-    z: 5,
-};
+// const objC = {
+//     z: 5,
+// };
 
-const objB = Object.create(objC);
-objB.y = 2;
+// const objB = Object.create(objC);
+// objB.y = 2;
 
-const objA = Object.create(objB);
-objA.x = 1;
+// const objA = Object.create(objB);
+// objA.x = 1;
 
-console.log(objC); //{ z: 5 }
-console.log(objC.hasOwnProperty("z")); //true
+// console.log(objC); //{ z: 5 }
+// console.log(objC.hasOwnProperty("z")); //true
 
-console.log(objB); //{}
-console.log(objB.hasOwnProperty("z")); //false
+// console.log(objB); //{}
+// console.log(objB.hasOwnProperty("z")); //false
 
-console.log(objB.y); //2
-console.log(objB.z); //5
+// console.log(objB.y); //2
+// console.log(objB.z); //5
 
-console.log(objA); //{ x: 1 }
-console.log(objA.hasOwnProperty("z")); //false
+// console.log(objA); //{ x: 1 }
+// console.log(objA.hasOwnProperty("z")); //false
 
-console.log(objA.y); //2
-console.log(objA.z); //5
+// console.log(objA.y); //2
+// console.log(objA.z); //5
 
-//* присваивание своего z в objA:
-objA.z = 1000;
-console.log("objA", objA); //objA { x: 1, z: 1000 }
-console.log(objA.hasOwnProperty("z")); //true
+// //* присваивание своего z в objA:
+// objA.z = 1000;
+// console.log("objA", objA); //objA { x: 1, z: 1000 }
+// console.log(objA.hasOwnProperty("z")); //true
 
 
 
@@ -197,46 +197,89 @@ console.log(objA.hasOwnProperty("z")); //true
 // console.log(myCar3); 
 // //Car { brand: 'Volvo', color: 'blue', price: 12000 }
 
-//** АБО деструктуризовано + changePrice
+//** АБО деструктуризовано + методи на прототипі: sayHi, changePrice
 
-const Car = function({brand, color, price} = {}) {
-    console.log(this); //Car {} Car {} Car {}
+// const Car = function({brand, color, price} = {}) {
+//     // console.log(this); //Car {} Car {} Car {}
 
-    this.brand = brand;
-    this.color = color;
-    this.price = price;
+//     this.brand = brand;
+//     this.color = color;
+//     this.price = price;
+// };
 
-    this.changePrice = function () {
-        this.price = newPrice
-    };
-};
+// console.log(Car.prototype);
 
-const myCar1 = new Car({
-    brand: "Mazda",
-    color: "red",
-    price: 10000,
-});
-console.log(myCar1);
-//Car { brand: 'Mazda', color: 'red', price: 10000 }
+// Car.prototype.sayHi = function() {
+//     console.log("Car.prototype.sayHi -> this", this);
+//     console.log("Hello :) ");
+// };
 
-const myCar2 = new Car({
-    brand: "Daihatsu",
-    color: "grey",
-    price: 5000,
-});
-console.log(myCar2); 
-//Car { brand: 'Daihatsu', color: 'grey', price: 5000 }
+// console.log(Car.prototype);
 
-const myCar3 = new Car({
-    brand: "Volvo",
-    color: "blue",
-    price: 12000,
-});
-console.log(myCar3); 
-//Car { brand: 'Volvo', color: 'blue', price: 12000 }
+// Car.prototype.changePrice = function(newPrice) {
+//     this.price = newPrice;
+// };
 
+// const myCar1 = new Car({
+//     brand: "Mazda",
+//     color: "red",
+//     price: 10000,
+// });
+// console.log(myCar1);
+// //Car { brand: 'Mazda', color: 'red', price: 10000 }
 
+// myCar1.sayHi(); //Hello :) 
+
+// myCar1.changePrice(8000);
+// console.log(myCar1); 
+// //Car { brand: 'Mazda', color: 'red', price: 8000 }
+
+// const myCar2 = new Car({
+//     brand: "Daihatsu",
+//     color: "grey",
+//     price: 5000,
+// });
+// console.log(myCar2); 
+// //Car { brand: 'Daihatsu', color: 'grey', price: 5000 }
+
+// const myCar3 = new Car({
+//     brand: "Volvo",
+//     color: "blue",
+//     price: 12000,
+// });
+// console.log(myCar3); 
+// //Car { brand: 'Volvo', color: 'blue', price: 12000 }
 
 
 //*_____________________________________________
 //*==============   ** Конструктор класу - constructor
+
+// const User = function({email, psswrd} = {}) {
+//     this.email = email;
+//     this.psswrd = psswrd;
+// };
+
+// User.prototype.changeEmail = function(newEmail) {
+//     this.email = newEmail;
+// };
+
+// const mango = new User({
+//     email: "mango@mail.com", 
+//     psswrd: 12345,
+// });
+
+// console.log(mango);
+// //User { email: 'mango@mail.com', psswrd: 12345 }
+
+// mango.changeEmail("mangoNew@mail.com");
+// console.log(mango);
+// //User { email: 'mangoNew@mail.com', psswrd: 12345 }
+
+
+//*_____________________________________________
+//*==============   ** Конструктор класу - constructor
+
+console.log(Math.round(5.1));
+console.log(Math.PI);
+
+
