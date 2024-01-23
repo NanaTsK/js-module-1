@@ -1,109 +1,74 @@
+<img width="980" alt="readme" src="pho/readme-cover.jpg">
 
-<img width="980" alt="readme" src="https://github.com/NanaTsK/js-module-1-5/assets/126491413/4d8baea0-f237-49f7-8220-e83708c49c03">
+# PowerPulse - React & Node.js app
 
+PowerPulse is a fitness app for transforming your body shape and lifestyle.
+About project
 
+With the help of this app, people can keep track of their weight, engage in
+sports, and lead a healthy lifestyle. Technologies used:
+
+    HTML/CSS
+    Framer Motion
+    JavaScript
+    React
+    Redux Toolkit
+    Pagination
+
+## Live page
+
+Live page: [**PowerPulse**](https://georgijbudik.github.io/project-GOreITshniki)
+
+## Project Design
+
+The website layout can bee seen in
+[**Figma**](https://www.figma.com/file/FHAaMcWwZCDbzWPlowFhEf/Power-Pulse?type=design&mode=design&t=pEbMMrU24sjh3Lm3-0)
+
+# Development team :
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/georgijbudik)
+  Georgii Budik | **Team Lead** | **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NanaTsK)
+  Nana Tsomaya-Kostova | **Scrum Master** | **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ivan011001)
+  Ivan Nedokhodiuk **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/olenakond)
+  Olena Kondratchuk **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bajmutov)
+  Oleksandr Bakhmutov **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AndriiMishch)
+  Andrii Mishchenko **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnastasiaBndr)
+  Anastasiia Bondarchuk **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Slav-0N)
+  Viacheslav Sosiedko **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Golik07)
+  Oleksandr Holiakov **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yuliatos12)
+  Yuliia Yaremenko **Full Stack Developer**
+
+- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anatolii2709)
+  Anatolii Tokariev **Full Stack Developer**
 
 ## GoIT Node.js Course Template Homework
-### Команди:
-Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)
-Форк створить репозиторій на вашому http://github.com
 
+### Text
 
+repo http://github.com
 
+====================================================================================
 
-//*====================================================================================
 ## Tutorial
 
-AvtoperevirkaModule-1:
+// ❌
 
-1.
-
-Змінні використовуються для зберігання даних. У кожної змінної є ідентифікатор
-(назва змінної). Значення кожної змінної зберігається в оперативній пам'яті.
-
-Змінну можна уявити як коробку з написом (ім'я змінної), в якій щось знаходиться
-(значення змінної).
-
-<ключове слово> <назва змінної> = <значення>
-
-Оголошення змінної починається з ключового слова const. Така змінна має бути
-одразу ініціалізована початковим значенням, і такій змінній не можна надати інше
-значення після її ініціалізації. Увага
-
-Створення змінної без ключового слова const призведе до помилки.
-
-const age = 20; const userName = "Mango"; const socialProfileTag = "@gluck";
-const totalWorkerSalary = 4052;
-
-В JavaScript назва змінної записується в camelCase-нотації. Перше слово пишеться
-маленькими буквами, а кожне наступне починається з великої. Назви змінних
-чутливі до регістру, тобто user, usEr і User - це різні змінні.
-
-<!--  ЗАВДАННЯ 1 -->
-
-Оголоси дві змінні, productName для назви товару, і pricePerItem для зберігання
-ціни за штуку. При оголошенні надай змінним наступні значення:
-
-    назва - рядок "Droid";
-    ціна за штуку - число 2000.
-
-    Оголошена змінна productName
-    Значення змінної productName - це рядок "Droid"
-    Оголошена змінна pricePerItem
-    Значення змінної pricePerItem - це число 2000
-
-2.
-
-Для того щоб оголосити змінну, якій у майбутньому можна буде присвоїти нове
-значення, використовується ключове слово let. Створення змінної без ключового
-слова let або const призведе до помилки.
-
-let age = 5; age = 10;
-
-let username = "Mango"; username = "Poly";
-
-Спроба звернутися до змінної за ім'ям до її оголошення, викличе помилку.
-
-Наприклад, не можна намагатися прочитати або змінити значення змінної до її
-оголошення:
-
-// ❌ Неправильно, буде помилка age = 15; // ReferenceError: Cannot access 'age'
-before initialization console.log(age); // ReferenceError: age is not defined
-
-// Оголошення змінної age let age = 20;
-
-// ✅ Правильно, звертаємося після оголошення age = 25; console.log(age); // 25
-
-<!--  ЗАВДАННЯ 2 -->
-
-3.
-
-<!--  ЗАВДАННЯ 3 -->
-
-4.
-
-<!--  ЗАВДАННЯ 4 -->
-
-5.
-
-<!--  ЗАВДАННЯ 5 -->
-
-6.
-
-<!--  ЗАВДАННЯ 6 -->
-
-7.
-
-<!--  ЗАВДАННЯ 7 -->
-
-8.
-
-<!--  ЗАВДАННЯ 8 -->
-
-9.
-
-<!--  ЗАВДАННЯ 9 -->
-
-10.
-
-<!--  ЗАВДАННЯ 10 -->
+// ✅
