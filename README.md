@@ -3,10 +3,13 @@
 # PowerPulse - React & Node.js app
 
 PowerPulse is a fitness app for transforming your body shape and lifestyle.
-About project
+
+## About project
 
 With the help of this app, people can keep track of their weight, engage in
-sports, and lead a healthy lifestyle. Technologies used:
+sports, and lead a healthy lifestyle.
+
+## Technologies used:
 
     HTML/CSS
     Framer Motion
@@ -33,31 +36,31 @@ The website layout can bee seen in
   Nana Tsomaya-Kostova | **Scrum Master** | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ivan011001)
-  Ivan Nedokhodiuk **Full Stack Developer**
+  Ivan Nedokhodiuk | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/olenakond)
-  Olena Kondratchuk **Full Stack Developer**
+  Olena Kondratchuk | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bajmutov)
-  Oleksandr Bakhmutov **Full Stack Developer**
+  Oleksandr Bakhmutov | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AndriiMishch)
-  Andrii Mishchenko **Full Stack Developer**
+  Andrii Mishchenko | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnastasiaBndr)
-  Anastasiia Bondarchuk **Full Stack Developer**
+  Anastasiia Bondarchuk | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Slav-0N)
-  Viacheslav Sosiedko **Full Stack Developer**
+  Viacheslav Sosiedko | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Golik07)
-  Oleksandr Holiakov **Full Stack Developer**
+  Oleksandr Holiakov | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yuliatos12)
-  Yuliia Yaremenko **Full Stack Developer**
+  Yuliia Yaremenko | **Full Stack Developer**
 
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anatolii2709)
-  Anatolii Tokariev **Full Stack Developer**
+  Anatolii Tokariev | **Full Stack Developer**
 
 ## GoIT Node.js Course Template Homework
 
