@@ -17,36 +17,46 @@ for their diet based on their blood type.
 
 ## Live page
 
-Live page: [**PowerPulse**](https://georgijbudik.github.io/project-GOreITshniki)
+Here is our website:
+[**PowerPulse**](https://georgijbudik.github.io/project-GOreITshniki)
 
 ## Technologies used:
 
-**FrontEnd** `FrontEnd`
+`FrontEnd`
 
     - HTML5/CSS3
     - JavaScript
     - React
     - Redux Toolkit
-    - Styled Components
     - Pagination
     - React Router
-    - Axios (for API requests)
+    - Axios
+    - Styled Components
+    - Material-UI
 
-**BackEnd** - Node.js - Express - MongoDB - Cloudinary - Render
+`BackEnd`
 
-**General** - VSCode - GIT/GitHub - Figma
+- Node.js
+- Express
+- MongoDB
+- Cloudinary
+- Render
+
+`General` - VSCode
+
+- GIT/GitHub - Figma
 
 ## Project Design
 
-The website layout can bee seen in
+The website layout can be reviewed in
 [**Figma**](https://www.figma.com/file/FHAaMcWwZCDbzWPlowFhEf/Power-Pulse?type=design&mode=design&t=pEbMMrU24sjh3Lm3-0)
 
 ## API
 
-The application utilizes a backend developed by our team:
+The application relies on a backend developed by our team:
 [**PowerPulse BackEnd**](https://github.com/georgijbudik/backend-GOreITshniki)
 
-# Development team : :eyes:
+# Development team :eyes:
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/georgijbudik)
 Georgii Budik | **Team Lead** | **Full Stack Developer**
