@@ -2,12 +2,21 @@
 
 # PowerPulse - React & Node.js app
 
-PowerPulse is a fitness app for transforming your body shape and lifestyle.
+Discover the groundbreaking Power Pulse app—an innovative solution compatible
+with any device, designed to support your journey towards achieving health goals
+and fostering a balanced lifestyle.
+
+With advanced features and an intuitive interface, we've made the pursuit of a
+healthy and energetic life both enjoyable and efficient.
 
 ## About the project
 
-With the help of this app, people can keep track of their weight, engage in
-sports, and lead a healthy lifestyle.
+This app allows you to explore and manage your sports activity and nutrition.
+Users can create accounts, select different physical activities, count calories
+burned, track time spent in physical activity, and calculate the number of
+calories consumed with a particular meal. Additionally, users can conveniently
+access a menu feature that enables them to track and identify products suitable
+for their diet based on their blood type.
 
 ## Technologies used:
 
@@ -62,13 +71,15 @@ The website layout can bee seen in
 - [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anatolii2709)
   Anatolii Tokariev | **Full Stack Developer**
 
+**A big thank you to our team for their contributions to this project!**
+
+====================================================================================
+
 ## GoIT Node.js Course Template Homework
 
 ### Text
 
 repo http://github.com
-
-====================================================================================
 
 ## Tutorial
 
