@@ -18,21 +18,21 @@ for their diet based on their blood type.
 ## Live page
 
 Here is our website:
-[**PowerPulse**](https://georgijbudik.github.io/project-GOreITshniki)
+[**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki)
 
 ## Technologies used:
 
 `FrontEnd`
 
-    - HTML5/CSS3
-    - JavaScript
-    - React
-    - Redux Toolkit
-    - Pagination
-    - React Router
-    - Axios
-    - Styled Components
-    - Material-UI
+- HTML5/CSS3
+- JavaScript
+- React
+- Redux Toolkit
+- Pagination
+- React Router
+- Axios
+- Styled Components
+- Material-UI
 
 `BackEnd`
 
@@ -42,9 +42,12 @@ Here is our website:
 - Cloudinary
 - Render
 
-`General` - VSCode
+`General`
 
-- GIT/GitHub - Figma
+- VSCode
+- GIT/GitHub
+- Figma
+- Adaptive and responsive design
 
 ## Project Design
 
@@ -53,7 +56,7 @@ The website layout can be reviewed in
 
 ## API
 
-The application relies on a backend developed by our team:
+Our team also developed the backend this application relies on:
 [**PowerPulse BackEnd**](https://github.com/georgijbudik/backend-GOreITshniki)
 
 # Development team :eyes:
@@ -140,3 +143,42 @@ repo http://github.com
   - ![MongoDB](https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
     ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=Cloudinary&logoColor=white)
   - ![Render](https://img.shields.io/badge/Render-AA3DCE?style=for-the-badge&logoColor=white)
+
+========================
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+### My Great Heading {#custom-id}
+
+term : definition
+
+~~The world is flat.~~
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+I need to highlight these ==very important words==.
+
+H~2~O
+
+X^2^
+
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
+
+---
+
+> blockquote
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
