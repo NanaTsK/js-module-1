@@ -9,11 +9,20 @@ of a healthy and energetic lifestyle :runner:
 ## About the project
 
 This app allows you to explore and manage your sports activity and nutrition.
-Users can create accounts, select different physical activities, count calories
-burned, track time spent in physical activity, and calculate the number of
-calories consumed with a particular meal. Additionally, users can conveniently
-access a menu feature that enables them to track and identify products suitable
-for their diet based on their blood type.
+Users can
+
+- [x] create accounts
+- [x] select different physical activities
+- [x] count calories burned
+- [x] track time spent in physical activity
+- [x] calculate the number of calories consumed with a particular meal
+- [x] identify products suitable for their diet based on their blood type
+
+create accounts, select different physical activities, count calories burned,
+track time spent in physical activity, and calculate the number of calories
+consumed with a particular meal. Additionally, users can conveniently access a
+menu feature that enables them to track and identify products suitable for their
+diet based on their blood type.
 
 ## Live page
 
@@ -21,6 +30,18 @@ Here is our website:
 [**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki)
 
 ## Technologies used:
+
+| `FrontEnd`        | `BackEnd`  | `General`                      |
+| ----------------- | ---------- | ------------------------------ |
+| HTML5/CSS3        | Node.js    | VSCode                         |
+| JavaScript        | Express    | GIT/GitHub                     |
+| React             | MongoDB    | Figma                          |
+| Redux Toolkit     | Cloudinary | Adaptive and responsive design |
+| Pagination        | Render     |                                |
+| React Router      | Swagger    |                                |
+| Axios             |            |                                |
+| Styled Components |            |                                |
+| Material-UI       |            |                                |
 
 `FrontEnd`
 
@@ -57,7 +78,7 @@ The website layout can be reviewed in
 ## API
 
 Our team also developed the backend this application relies on:
-[**PowerPulse BackEnd**](https://github.com/georgijbudik/backend-GOreITshniki)
+[**Power Pulse BackEnd**](https://github.com/georgijbudik/backend-GOreITshniki)
 
 # Development team :eyes:
 
