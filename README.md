@@ -1,8 +1,8 @@
 <img width="980" alt="readme" src="pho/readme-cover.jpg">
 
-# PowerPulse - React & Node.js app
+# Power Pulse - React & Node.js app
 
-Discover the groundbreaking PowerPulse app — an innovative solution with
+Discover the groundbreaking Power Pulse app — an innovative solution with
 intuitive interface compatible with any device, designed to support your pursuit
 of a healthy and energetic lifestyle :runner:
 
@@ -93,7 +93,7 @@ Yuliia Yaremenko | **Full Stack Developer**
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Anatolii2709)
 Anatolii Tokariev | **Full Stack Developer**
 
-**A big thank you to our team for their contributions to this project!**
+**A big thank you to our team for their contribution to this project!**
 :blue_heart::yellow_heart:
 
 ====================================================================================
