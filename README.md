@@ -9,7 +9,7 @@ of a healthy and energetic lifestyle :runner:
 ## About the project
 
 This app allows you to explore and manage your sports activity and nutrition.
-Users can
+Users can:
 
 - [x] create accounts
 - [x] select different physical activities
@@ -18,12 +18,6 @@ Users can
 - [x] calculate the number of calories consumed with a particular meal
 - [x] identify products suitable for their diet based on their blood type
 
-create accounts, select different physical activities, count calories burned,
-track time spent in physical activity, and calculate the number of calories
-consumed with a particular meal. Additionally, users can conveniently access a
-menu feature that enables them to track and identify products suitable for their
-diet based on their blood type.
-
 ## Live page
 
 Here is our website:
@@ -31,44 +25,17 @@ Here is our website:
 
 ## Technologies used:
 
-| `FrontEnd`        | `BackEnd`  | `General`                      |
-| ----------------- | ---------- | ------------------------------ |
-| HTML5/CSS3        | Node.js    | VSCode                         |
-| JavaScript        | Express    | GIT/GitHub                     |
-| React             | MongoDB    | Figma                          |
-| Redux Toolkit     | Cloudinary | Adaptive and responsive design |
-| Pagination        | Render     |                                |
-| React Router      | Swagger    |                                |
-| Axios             |            |                                |
-| Styled Components |            |                                |
-| Material-UI       |            |                                |
-
-`FrontEnd`
-
-- HTML5/CSS3
-- JavaScript
-- React
-- Redux Toolkit
-- Pagination
-- React Router
-- Axios
-- Styled Components
-- Material-UI
-
-`BackEnd`
-
-- Node.js
-- Express
-- MongoDB
-- Cloudinary
-- Render
-
-`General`
-
-- VSCode
-- GIT/GitHub
-- Figma
-- Adaptive and responsive design
+| `FrontEnd`        | `BackEnd`  | `General`  |
+| ----------------- | ---------- | ---------- |
+| HTML5/CSS3        | Node.js    | VSCode     |
+| JavaScript        | Express    | GIT/GitHub |
+| React             | MongoDB    | Figma      |
+| Redux Toolkit     | Cloudinary |            |
+| Pagination        | Render     |            |
+| React Router      | Swagger    |            |
+| Axios             |            |            |
+| Styled Components |            |            |
+| Material-UI       |            |            |
 
 ## Project Design
 
@@ -97,23 +64,23 @@ Olena Kondratchuk | **Full Stack Developer**
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bajmutov)
 Oleksandr Bakhmutov | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AndriiMishch)
-  Andrii Mishchenko | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AndriiMishch)
+Andrii Mishchenko | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnastasiaBndr)
-  Anastasiia Bondarchuk | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnastasiaBndr)
+Anastasiia Bondarchuk | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Slav-0N)
-  Viacheslav Sosiedko | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Slav-0N)
+Viacheslav Sosiedko | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Golik07)
-  Oleksandr Holiakov | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Golik07)
+Oleksandr Holiakov | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yuliatos12)
-  Yuliia Yaremenko | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yuliatos12)
+Yuliia Yaremenko | **Full Stack Developer**
 
-- [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anatolii2709)
-  Anatolii Tokariev | **Full Stack Developer**
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anatolii2709)
+Anatolii Tokariev | **Full Stack Developer**
 
 **A big thank you to our team for their contributions to this project!**
 
@@ -203,3 +170,44 @@ X^2^
   "age": 25
 }
 ```
+
+## Technologies used:
+
+| `FrontEnd`        | `BackEnd`  | `General`  |
+| ----------------- | ---------- | ---------- |
+| HTML5/CSS3        | Node.js    | VSCode     |
+| JavaScript        | Express    | GIT/GitHub |
+| React             | MongoDB    | Figma      |
+| Redux Toolkit     | Cloudinary |            |
+| Pagination        | Render     |            |
+| React Router      | Swagger    |            |
+| Axios             |            |            |
+| Styled Components |            |            |
+| Material-UI       |            |            |
+
+`FrontEnd`
+
+- HTML5/CSS3
+- JavaScript
+- React
+- Redux Toolkit
+- Pagination
+- React Router
+- Axios
+- Styled Components
+- Material-UI
+
+`BackEnd`
+
+- Node.js
+- Express
+- MongoDB
+- Cloudinary
+- Render
+
+`General`
+
+- VSCode
+- GIT/GitHub
+- Figma
+- Adaptive and responsive design
