@@ -75,6 +75,10 @@ The website layout can bee seen in
 
 ====================================================================================
 
+That is so funny! :joy:
+
+That is so funny! :sport:
+
 ## GoIT Node.js Course Template Homework
 
 ### Text
