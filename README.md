@@ -1,3 +1,17 @@
+
+<img width="980" alt="readme" src="https://github.com/NanaTsK/js-module-1-5/assets/126491413/4d8baea0-f237-49f7-8220-e83708c49c03">
+
+
+
+## GoIT Node.js Course Template Homework
+### Команди:
+Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)
+Форк створить репозиторій на вашому http://github.com
+
+
+
+
+//*====================================================================================
 ## Tutorial
 
 AvtoperevirkaModule-1:
