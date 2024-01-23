@@ -18,10 +18,12 @@ Users can:
 - [x] calculate the number of calories consumed with a particular meal
 - [x] identify products suitable for their diet based on their blood type
 
-## Live page
+## References
 
-Here is our website:
-[**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki)
+Live page:
+[**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki) Project
+design:
+[**Figma**](https://www.figma.com/file/FHAaMcWwZCDbzWPlowFhEf/Power-Pulse?type=design&mode=design&t=pEbMMrU24sjh3Lm3-0)
 
 ## Technologies used:
 
@@ -37,19 +39,26 @@ Here is our website:
 | Styled Components |            |            |
 | Material-UI       |            |            |
 
-## Project Design
+## Installation & Scripts
 
-The website layout can be reviewed in
-[**Figma**](https://www.figma.com/file/FHAaMcWwZCDbzWPlowFhEf/Power-Pulse?type=design&mode=design&t=pEbMMrU24sjh3Lm3-0)
+1. Clone the repository: git clone
+   `https://github.com/georgijbudik/project-GOreITshniki`
+2. Install the dependencies: `npm install`
+3. Run development mode: `npm run dev`
+4. Start local server: `npm start`
+5. Run production build: `npm build`
 
 ## API
 
 Our team also developed the backend this application relies on:
 [**Power Pulse BackEnd**](https://github.com/georgijbudik/backend-GOreITshniki)
 
-# Development team :eyes:
+Endpoint documentation:
+[**Power Pulse API**](https://backend-project-dl3a.onrender.com/api-docs/)
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/georgijbudik)
+# Development team GOreITshniki :eyes:
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/georgijbudik)
 Georgii Budik | **Team Lead** | **Full Stack Developer**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=plastic&logo=github&logoColor=white)](https://github.com/NanaTsK)
@@ -211,3 +220,11 @@ X^2^
 - GIT/GitHub
 - Figma
 - Adaptive and responsive design
+
+///////// Інструкції з запуску
+
+    Встановіть залежності: npm install.
+    Налаштуйте змінні середовища у файлі .env, з прикладу .env.example.
+    Запустіть сервер: npm run start.
+
+/////////
