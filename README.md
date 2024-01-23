@@ -4,7 +4,7 @@
 
 PowerPulse is a fitness app for transforming your body shape and lifestyle.
 
-## About project
+## About the project
 
 With the help of this app, people can keep track of their weight, engage in
 sports, and lead a healthy lifestyle.
@@ -12,9 +12,9 @@ sports, and lead a healthy lifestyle.
 ## Technologies used:
 
     HTML/CSS
-    Framer Motion
     JavaScript
     React
+    Node.js
     Redux Toolkit
     Pagination
 
