@@ -12,7 +12,7 @@ This app allows you to explore and manage your sports activity and nutrition.
 Users can:
 
 - [x] create accounts
-- [x] select different physical activities
+- [x] select different exercises
 - [x] count calories burned
 - [x] track time spent in physical activity
 - [x] calculate the number of calories consumed with a particular meal
