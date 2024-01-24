@@ -5,10 +5,6 @@
 Within this repository lies the backend component of the Power Pulse app,
 facilitating authorized users in managing their nutrition and activity.
 
-Discover the groundbreaking Power Pulse app — an innovative solution with
-intuitive interface compatible with any device, designed to support your pursuit
-of a healthy and energetic lifestyle :runner:
-
 ## About the project
 
 This app allows you to explore and manage your sports activity and nutrition.
