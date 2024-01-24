@@ -43,7 +43,7 @@
 
 ## Installation & Scripts
 
-1. Клонуй репозиторій:
+1. Склонуй репозиторій:
    `git clone https://github.com/georgijbudik/project-GOreITshniki`
 2. Встановіть залежності: `npm install`
 3. Запустіть режим розробки: `npm run dev`
@@ -63,7 +63,7 @@ start Запустіть збірку для продакшену: npm build
 Документація ендпоінтів:
 [**Power Pulse API**](https://backend-project-dl3a.onrender.com/api-docs/)
 
-# Development team - GOreITshniki :eyes:
+# Команда розробників - GOreITshniki :eyes:
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/georgijbudik)
 Georgii Budik | **Team Lead** | **Full Stack Developer**
