@@ -41,7 +41,7 @@
 | Styled Components |            |            |
 | Material-UI       |            |            |
 
-## Installation & Scripts
+## Інсталяція та Скрипти
 
 1. Склонуй репозиторій:
    `git clone https://github.com/georgijbudik/project-GOreITshniki`
