@@ -5,32 +5,6 @@
 Within this repository lies the backend component of the Power Pulse app,
 facilitating authorized users in managing their nutrition and activity.
 
-## About the project
-
-This app allows you to explore and manage your sports activity and nutrition.
-Users can:
-
-- [x] create accounts
-- [x] select different exercises
-- [x] count calories burned
-- [x] track time spent in physical activity
-- [x] calculate the number of calories consumed with a particular meal
-- [x] identify products suitable for their diet based on their blood type
-- [x] change language & dark/light theme
-
-## References
-
-The source code of the project's Frontend section, where you'll discover the web
-interface along with its corresponding client-side code, is also developed by
-our team:
-[**Power Pulse FrontEnd**](https://github.com/georgijbudik/project-GOreITshniki)
-
-Live page:
-[**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki)
-
-Project design:
-[**Layout**](https://www.figma.com/file/FHAaMcWwZCDbzWPlowFhEf/Power-Pulse?type=design&mode=design&t=pEbMMrU24sjh3Lm3-0)
-
 ## Technologies used:
 
 | `FrontEnd`        | `BackEnd`  | `General`  |
@@ -58,6 +32,29 @@ Project design:
 
 Endpoint documentation:
 [**Power Pulse API**](https://backend-project-dl3a.onrender.com/api-docs/)
+
+## About the project
+
+This app allows you to explore and manage your sports activity and nutrition.
+Users can:
+
+- [x] create accounts
+- [x] select different exercises
+- [x] count calories burned
+- [x] track time spent in physical activity
+- [x] calculate the number of calories consumed with a particular meal
+- [x] identify products suitable for their diet based on their blood type
+- [x] change language & dark/light theme
+
+## References
+
+The source code of the project's Frontend section, where you'll discover the web
+interface along with its corresponding client-side code, is also developed by
+our team:
+[**Power Pulse FrontEnd**](https://github.com/georgijbudik/project-GOreITshniki)
+
+Live page:
+[**Power Pulse**](https://georgijbudik.github.io/project-GOreITshniki)
 
 # Development team - GOreITshniki :eyes:
 
