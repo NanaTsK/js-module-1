@@ -94,5 +94,4 @@ Yuliia Yaremenko | **Full Stack Developer**
 Anatolii Tokariev | **Full Stack Developer**
 
 **Велика подяка нашій команді за їх внесок у цей проект!**
-:blue_heart::yellow_heart: **Велика подяка нашій команді за їх внесок у цей
-проект!** :blue_heart::yellow_heart:
+:blue_heart::yellow_heart:
