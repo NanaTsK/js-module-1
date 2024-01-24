@@ -1,6 +1,6 @@
 <img width="980" alt="readme" src="pho/readme-cover.jpg">
 
-# Power Pulse - додаток на React та Node.js - - BackEnd
+# Power Pulse - додаток на React та Node.js - BackEnd
 
 У цьому репозиторії міститься серверний компонент додатку Power Pulse, який
 допомагає авторизованим користувачам в управлінні їх харчуванням і активністю.
