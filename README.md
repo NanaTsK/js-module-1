@@ -34,10 +34,10 @@ Project design:
 | HTML5/CSS3        | Node.js    | VSCode     |
 | JavaScript        | Express    | GIT/GitHub |
 | React             | MongoDB    | Figma      |
-| Redux Toolkit     | Cloudinary |            |
-| Pagination        | Render     |            |
+| Redux Toolkit     | Cloudinary | Webpack    |
+| Pagination        | Render     | Parcel     |
 | React Router      | Swagger    |            |
-| Axios             |            |            |
+| Axios             | Mongoose   |            |
 | Styled Components |            |            |
 | Material-UI       |            |            |
 

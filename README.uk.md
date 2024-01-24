@@ -2,7 +2,7 @@
 
 # Power Pulse - додаток на React та Node.js
 
-Відкрий для себе новаторський застосунок Power Pulse — інноваційний інструмент з
+Відкрий для себе новаторський додаток Power Pulse — інноваційний інструмент з
 інтуїтивним інтерфейсом, сумісним з будь-яким пристроєм, призначений для
 підтримки твого здорового та енергійного способу життя :runner:
 
@@ -12,7 +12,7 @@
 та харчуванням. Користувачі можуть:
 
 - [x] створювати облікові записи
-- [x] обирати різні види фізичної активності
+- [x] обирати різні види вправ
 - [x] рахувати кількість спалених калорій
 - [x] відстежувати час, проведений у фізичній активності
 - [x] розраховувати кількість спожитих калорій за конкретним прийомом їжі
@@ -34,10 +34,10 @@
 | HTML5/CSS3        | Node.js    | VSCode     |
 | JavaScript        | Express    | GIT/GitHub |
 | React             | MongoDB    | Figma      |
-| Redux Toolkit     | Cloudinary |            |
-| Pagination        | Render     |            |
+| Redux Toolkit     | Cloudinary | Webpack    |
+| Pagination        | Render     | Parcel     |
 | React Router      | Swagger    |            |
-| Axios             |            |            |
+| Axios             | Mongoose   |            |
 | Styled Components |            |            |
 | Material-UI       |            |            |
 
@@ -45,15 +45,10 @@
 
 1. Склонуй репозиторій:
    `git clone https://github.com/georgijbudik/project-GOreITshniki`
-2. Встановіть залежності: `npm install`
-3. Запустіть режим розробки: `npm run dev`
-4. Запустіть локальний сервер: `npm start`
-5. Запустіть збірку для продакшену: `npm build`
-
-Клонуйте репозиторій: git clone
-https://github.com/georgijbudik/project-GOreITshniki Встановіть залежності: npm
-install Запустіть режим розробки: npm run dev Запустіть локальний сервер: npm
-start Запустіть збірку для продакшену: npm build
+2. Встанови залежності: `npm install`
+3. Запусти режим розробки: `npm run dev`
+4. Запусти локальний сервер: `npm start`
+5. Запусти збірку для продакшену: `npm build`
 
 ## API
 
